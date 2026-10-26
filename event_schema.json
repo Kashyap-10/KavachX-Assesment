@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "KavachXEvent",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Unique UUID for the event"
+    },
+    "device_id": {
+      "type": "string",
+      "description": "Edge device identifier",
+      "default": "kx-edge-001"
+    },
+    "camera_id": {
+      "type": "string",
+      "description": "Camera identifier",
+      "default": "cam-03"
+    },
+    "rule_id": {
+      "type": "string",
+      "description": "Identifier for the violated rule"
+    },
+    "rule_text": {
+      "type": "string",
+      "description": "Original plain-English rule"
+    },
+    "ts_start": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp when tracking began in zone"
+    },
+    "ts_end": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp when violation threshold was triggered"
+    },
+    "track_id": {
+      "type": "integer",
+      "description": "Track ID of the detected subject"
+    },
+    "label": {
+      "type": "string",
+      "description": "Class label (e.g. person)"
+    },
+    "attributes": {
+      "type": "object",
+      "description": "Visual attributes of the target (e.g. carrying bag)"
+    },
+    "confidence": {
+      "type": "number",
+      "description": "Model detection confidence score between 0.0 and 1.0"
+    },
+    "dwell_s": {
+      "type": "number",
+      "description": "Total dwell duration in seconds inside the zone"
+    },
+    "zone": {
+      "type": "string",
+      "description": "Identifier of the zone where rule was triggered"
+    },
+    "evidence_frame": {
+      "type": "string",
+      "description": "Base64 encoded JPEG with faces/heads masked"
+    },
+    "needs_verification": {
+      "type": "boolean",
+      "description": "Flag set to true when detection confidence is borderline"
+    }
+  },
+  "required": [
+    "event_id",
+    "device_id",
+    "camera_id",
+    "rule_id",
+    "rule_text",
+    "ts_start",
+    "ts_end",
+    "track_id",
+    "label",
+    "attributes",
+    "confidence",
+    "dwell_s",
+    "zone",
+    "evidence_frame",
+    "needs_verification"
+  ]
+}

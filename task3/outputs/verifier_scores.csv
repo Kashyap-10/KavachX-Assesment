@@ -1,0 +1,31 @@
+filename,is_intrusion,category,description,verifier_score
+alert_01.jpg,1,human_intruder,Person scaling perimeter fence,0.75
+alert_02.jpg,0,shadows,Tree shadows cast by streetlamp,0.5512
+alert_03.jpg,1,human_intruder,Person prying warehouse side door,0.7521
+alert_04.jpg,0,animal,Stray dog walking across courtyard,0.5517
+alert_05.jpg,0,glare,Passing car headlights causing glare flare,0.5342
+alert_06.jpg,1,human_intruder,Person crouching near loading bay,0.7415
+alert_07.jpg,0,rain,Heavy rain droplets reflecting IR illuminator,0.4576
+alert_08.jpg,0,shadows,Swaying gate shadow under wind,0.5213
+alert_09.jpg,1,human_intruder,Intruder walking through back alley,0.7532
+alert_10.jpg,0,insect,Moth flying close to camera lens,0.5656
+alert_11.jpg,1,human_intruder,Individual tampering with electrical cabinet,0.7582
+alert_12.jpg,0,animal,Cat running along compound wall,0.5624
+alert_13.jpg,0,wind_debris,Plastic bag blown by strong wind,0.5679
+alert_14.jpg,1,human_intruder,Person carrying toolbox near storage container,0.7582
+alert_15.jpg,0,fog,Patchy fog rolling across parking area,0.4751
+alert_16.jpg,1,human_intruder,Person running through parking lot,0.7319
+alert_17.jpg,0,spider_web,Spider web strands lit by infrared LED,0.5666
+alert_18.jpg,0,shadows,Cloud shadow shifting over ground,0.5476
+alert_19.jpg,1,human_intruder,Person attempting to climb exterior ladder,0.7412
+alert_20.jpg,0,animal,Raccoon rummaging near dumpster,0.5753
+alert_21.jpg,1,human_intruder,Suspicious figure walking along property boundary,0.7481
+alert_22.jpg,0,glare,Flickering fluorescent sign reflection,0.5639
+alert_23.jpg,1,human_intruder,Two individuals walking past barrier,0.7338
+alert_24.jpg,0,rain,Wind-driven puddle splash reflection,0.4613
+alert_25.jpg,1,human_intruder,Person standing in shadow of warehouse door,0.731
+alert_26.jpg,0,animal,Fox passing perimeter line,0.5525
+alert_27.jpg,1,human_intruder,Person crawling under gate gap,0.7596
+alert_28.jpg,0,shadows,Flag pole swaying shadow,0.534
+alert_29.jpg,1,human_intruder,Person examining window latch,0.7462
+alert_30.jpg,0,insect,Spider walking across camera housing,0.5609

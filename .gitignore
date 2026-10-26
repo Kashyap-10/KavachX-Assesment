@@ -1,0 +1,37 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Models and checkpoints
+*.pt
+*.onnx
+*.engine
+*.tflite
+runs/
+weights/
+
+# Raw video and datasets (Confidentiality & size)
+clips/*.mp4
+clips/*.avi
+clips/*.mkv
+data/ppe/**/*.jpg
+data/ppe/**/*.png
+alerts/*.jpg
+alerts/*.png
+
+# Outputs / artifacts
+task1/outputs/*.jpg
+task1/outputs/*.png
+task2/outputs/*.onnx
+task2/outputs/*.pt
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+.env

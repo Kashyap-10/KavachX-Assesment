@@ -1,0 +1,31 @@
+filename,is_intrusion,category,description
+alert_01.jpg,1,human_intruder,Person scaling perimeter fence
+alert_02.jpg,0,shadows,Tree shadows cast by streetlamp
+alert_03.jpg,1,human_intruder,Person prying warehouse side door
+alert_04.jpg,0,animal,Stray dog walking across courtyard
+alert_05.jpg,0,glare,Passing car headlights causing glare flare
+alert_06.jpg,1,human_intruder,Person crouching near loading bay
+alert_07.jpg,0,rain,Heavy rain droplets reflecting IR illuminator
+alert_08.jpg,0,shadows,Swaying gate shadow under wind
+alert_09.jpg,1,human_intruder,Intruder walking through back alley
+alert_10.jpg,0,insect,Moth flying close to camera lens
+alert_11.jpg,1,human_intruder,Individual tampering with electrical cabinet
+alert_12.jpg,0,animal,Cat running along compound wall
+alert_13.jpg,0,wind_debris,Plastic bag blown by strong wind
+alert_14.jpg,1,human_intruder,Person carrying toolbox near storage container
+alert_15.jpg,0,fog,Patchy fog rolling across parking area
+alert_16.jpg,1,human_intruder,Person running through parking lot
+alert_17.jpg,0,spider_web,Spider web strands lit by infrared LED
+alert_18.jpg,0,shadows,Cloud shadow shifting over ground
+alert_19.jpg,1,human_intruder,Person attempting to climb exterior ladder
+alert_20.jpg,0,animal,Raccoon rummaging near dumpster
+alert_21.jpg,1,human_intruder,Suspicious figure walking along property boundary
+alert_22.jpg,0,glare,Flickering fluorescent sign reflection
+alert_23.jpg,1,human_intruder,Two individuals walking past barrier
+alert_24.jpg,0,rain,Wind-driven puddle splash reflection
+alert_25.jpg,1,human_intruder,Person standing in shadow of warehouse door
+alert_26.jpg,0,animal,Fox passing perimeter line
+alert_27.jpg,1,human_intruder,Person crawling under gate gap
+alert_28.jpg,0,shadows,Flag pole swaying shadow
+alert_29.jpg,1,human_intruder,Person examining window latch
+alert_30.jpg,0,insect,Spider walking across camera housing
