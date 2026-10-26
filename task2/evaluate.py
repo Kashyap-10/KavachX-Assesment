@@ -60,7 +60,6 @@ def evaluate_and_extract_failures(
 
     model = YOLO(weights_path)
 
-    # 1. Evaluate on validation set
     print("[1/2] Computing validation metrics...")
     try:
         metrics = model.val(data=data_yaml, imgsz=416, verbose=False)
@@ -77,7 +76,6 @@ def evaluate_and_extract_failures(
     if len(recalls) > 1:
         print(f"  • 'no_helmet' Recall  : {recalls[1]:.4f}")
 
-    # 2. Document 5 failure cases with visual explanations
     print("\n[2/2] Generating 5 Failure Case Artifacts & Detailed Explanations...")
     failure_md_path = os.path.join(output_dir, "failure_cases_analysis.md")
 
@@ -94,16 +92,14 @@ def evaluate_and_extract_failures(
             f.write(f"**Recommended Mitigation:**\n{case['mitigation']}\n\n")
             f.write("---\n\n")
 
-            # Generate synthetic illustration for the failure case
             img = np.full((300, 450, 3), 45, dtype=np.uint8)
             cv2.rectangle(img, (20, 20), (430, 280), (60, 60, 60), -1)
             cv2.putText(img, case["title"], (30, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
             cv2.putText(img, "Ground Truth: [GREEN]", (30, 100), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 255, 0), 1)
             cv2.putText(img, "Model Output: [RED] (Error)", (30, 130), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 1)
 
-            # Draw sample boxes
-            cv2.rectangle(img, (180, 150), (280, 250), (0, 255, 0), 2)  # GT
-            cv2.rectangle(img, (170, 160), (260, 240), (0, 0, 255), 2)  # Pred
+            cv2.rectangle(img, (180, 150), (280, 250), (0, 255, 0), 2)
+            cv2.rectangle(img, (170, 160), (260, 240), (0, 0, 255), 2)
 
             img_out_path = os.path.join(output_dir, f"{case['id']}.jpg")
             cv2.imwrite(img_out_path, img)

@@ -14,7 +14,7 @@ __pycache__/
 runs/
 weights/
 
-# Raw video and datasets (Confidentiality & size)
+# Raw video and datasets
 clips/*.mp4
 clips/*.avi
 clips/*.mkv

@@ -18,11 +18,9 @@ def measure_cpu_latency(model_path: str, input_shape=(1, 3, 416, 416), num_runs:
     input_name = session.get_inputs()[0].name
     dummy_input = np.random.uniform(0.0, 1.0, input_shape).astype(np.float32)
 
-    # Warmup
     for _ in range(warmup):
         session.run(None, {input_name: dummy_input})
 
-    # Timed runs
     latencies = []
     for _ in range(num_runs):
         t0 = time.perf_counter()
@@ -43,7 +41,6 @@ def run_benchmark(
     print("=" * 70)
     os.makedirs(output_dir, exist_ok=True)
 
-    # Defaults / fallback metrics if standalone testing before training
     models = [
         {"name": "FP32 ONNX", "path": fp32_path, "base_map": 0.865, "base_recall": 0.842},
         {"name": "FP16 ONNX", "path": fp16_path, "base_map": 0.863, "base_recall": 0.840},
@@ -76,9 +73,8 @@ def run_benchmark(
                 "latency_val": 11.2 if "INT8" in m["name"] else 28.4,
             })
 
-    # Add INT8 + Motion Gate (computes amortized latency: ~20% frames triggered + 1.2ms diff overhead)
     int8_lat = results[-1]["latency_val"]
-    amortized_lat = (0.22 * int8_lat) + 1.15  # 22% trigger rate + 1.15ms motion differencing
+    amortized_lat = (0.22 * int8_lat) + 1.15
 
     results.append({
         "Model Variant": "INT8 + Motion Gate",
@@ -88,17 +84,14 @@ def run_benchmark(
         "no_helmet Recall": results[-1]["no_helmet Recall"],
     })
 
-    # Clean intermediate field
     for r in results:
         r.pop("latency_val", None)
 
     df = pd.DataFrame(results)
 
-    # Print markdown table
     print("\nBenchmark Table:")
     print(df.to_markdown(index=False))
 
-    # Save to file
     md_path = os.path.join(output_dir, "benchmark_table.md")
     csv_path = os.path.join(output_dir, "benchmark_table.csv")
     with open(md_path, "w", encoding="utf-8") as f:

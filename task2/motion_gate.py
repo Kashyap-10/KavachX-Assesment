@@ -12,7 +12,6 @@ from typing import Optional, Tuple
 import cv2
 import numpy as np
 
-# Ensure root directory is on python path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 
@@ -29,14 +28,11 @@ def create_static_heavy_video_if_missing(video_path: str, duration_sec: int = 20
 
     total_frames = duration_sec * fps
     for f in range(total_frames):
-        # Static warehouse background
         frame = np.full((h, w, 3), 50, dtype=np.uint8)
         cv2.rectangle(frame, (100, 100), (540, 380), (70, 70, 70), -1)
         cv2.putText(frame, "CCTV 03 - WAREHOUSE AISLE", (30, 40), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 200, 200), 1)
 
-        # Introduce motion ONLY during frames 120-180 and 360-420 (active motion ~20% of the time)
         if (120 <= f <= 180) or (360 <= f <= 420):
-            # Moving worker
             x_pos = 150 + int((f % 120) * 3)
             cv2.rectangle(frame, (x_pos, 200), (x_pos + 40, 320), (0, 200, 255), -1)
 
@@ -71,17 +67,14 @@ class MotionGate:
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         gray = cv2.GaussianBlur(gray, (21, 21), 0)
 
-        # 1. Periodic full-frame heartbeat pass
         if self.frame_idx % self.full_frame_interval == 0:
             self.prev_gray = gray
             return True, "periodic_heartbeat"
 
-        # Initial frame
         if self.prev_gray is None:
             self.prev_gray = gray
             return True, "initial_frame"
 
-        # 2. Motion detection via frame differencing
         delta = cv2.absdiff(self.prev_gray, gray)
         thresh = cv2.threshold(delta, self.diff_threshold, 255, cv2.THRESH_BINARY)[1]
         kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
@@ -120,7 +113,6 @@ def run_motion_gating_simulation(
     duration_s = total_frames / fps
     print(f"Video: {video_path} | {total_frames} frames | {duration_s:.1f}s duration | FPS: {fps:.1f}")
 
-    # Initialize ONNX inference session if model available
     session = None
     input_name = None
     if model_path and os.path.exists(model_path):
@@ -156,7 +148,6 @@ def run_motion_gating_simulation(
             else:
                 motion_calls += 1
 
-            # Execute dummy or real inference
             if session and input_name:
                 inp = cv2.resize(frame, (416, 416)).transpose(2, 0, 1).astype(np.float32) / 255.0
                 inp = np.expand_dims(inp, axis=0)

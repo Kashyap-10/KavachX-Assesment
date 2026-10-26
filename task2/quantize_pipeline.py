@@ -52,7 +52,6 @@ class PPECalibrationDataReader(CalibrationDataReader):
         self.index = 0
         print(f"[Calibration] Loaded {len(self.image_paths)} calibration images from '{calibration_dir}'")
 
-        # If no images found, create synthetic calibration batch
         if len(self.image_paths) == 0:
             print("[Calibration] No images found. Using synthetic random calibration tensors.")
             self.use_synthetic = True
@@ -64,10 +63,8 @@ class PPECalibrationDataReader(CalibrationDataReader):
         """Preprocesses image to YOLO input format: (1, 3, 416, 416) float32 [0, 1]."""
         img = cv2.imread(img_path)
         if img is None:
-            # Fallback random image
             img = np.random.randint(0, 255, (416, 416, 3), dtype=np.uint8)
 
-        # Resize with letterboxing
         h, w = img.shape[:2]
         target_h, target_w = self.input_shape[2], self.input_shape[3]
         scale = min(target_w / w, target_h / h)
@@ -77,7 +74,6 @@ class PPECalibrationDataReader(CalibrationDataReader):
         canvas = np.full((target_h, target_w, 3), 114, dtype=np.uint8)
         canvas[(target_h - nh) // 2 : (target_h - nh) // 2 + nh, (target_w - nw) // 2 : (target_w - nw) // 2 + nw] = resized
 
-        # BGR to RGB, HWC to CHW, normalize to [0, 1]
         rgb = cv2.cvtColor(canvas, cv2.COLOR_BGR2RGB)
         tensor = rgb.transpose(2, 0, 1).astype(np.float32) / 255.0
         return np.expand_dims(tensor, axis=0)
@@ -102,7 +98,6 @@ class PPECalibrationDataReader(CalibrationDataReader):
         self.index = 0
 
 
-# Alias for backward compatibility
 PPECalibrationReader = PPECalibrationDataReader
 
 
@@ -124,7 +119,6 @@ def build_quantization_pipeline(
     if not os.path.exists(weights_path):
         raise FileNotFoundError(f"Model weights file not found: {weights_path}")
 
-    # 1. Export FP32 ONNX
     print("\n[Step 1/3] Exporting FP32 ONNX Model...")
     model = YOLO(weights_path)
     fp32_exported = model.export(format="onnx", imgsz=imgsz, half=False, dynamic=False)
@@ -133,7 +127,6 @@ def build_quantization_pipeline(
     fp32_size = os.path.getsize(target_fp32) / (1024 * 1024)
     print(f"  -> Generated: {target_fp32} ({fp32_size:.2f} MB)")
 
-    # 2. Export FP16 ONNX
     print("\n[Step 2/3] Exporting FP16 ONNX Model...")
     try:
         fp16_exported = model.export(format="onnx", imgsz=imgsz, half=True, dynamic=False)
@@ -146,11 +139,9 @@ def build_quantization_pipeline(
         target_fp16 = os.path.join(output_dir, "model_fp16.onnx")
         shutil.copy(target_fp32, target_fp16)
 
-    # 3. Static Post-Training Quantization (PTQ) to INT8
     print("\n[Step 3/3] Performing Static INT8 Post-Training Quantization (PTQ)...")
     target_int8 = os.path.join(output_dir, "model_int8.onnx")
 
-    # Inspect input name and shape from FP32 model
     session = ort.InferenceSession(target_fp32, providers=["CPUExecutionProvider"])
     input_info = session.get_inputs()[0]
     input_name = input_info.name
@@ -163,8 +154,6 @@ def build_quantization_pipeline(
         max_images=100 if not mitigation_mode else 150,
     )
 
-    # Configure quantization parameters
-    # If mitigation_mode is enabled: use Percentile calibration to avoid outlier saturation
     calib_method = CalibrationMethod.Percentile if mitigation_mode else CalibrationMethod.MinMax
 
     quantize_static(
@@ -205,7 +194,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # Fallback to yolov8n.pt if best.pt is not yet trained
     weights = args.weights
     if not os.path.exists(weights):
         print(f"[Notice] '{weights}' not found. Using baseline 'yolov8n.pt' for quantization pipeline verification.")

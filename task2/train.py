@@ -27,23 +27,19 @@ def create_synthetic_ppe_data_if_empty(dataset_root: str = "data/ppe"):
         return
 
     print(f"[Notice] Generating synthetic sample PPE dataset in '{dataset_root}' for verification...")
-    # Generate 20 train and 10 val images
     for split, count in [("train", 20), ("val", 10)]:
         img_dir = os.path.join(dataset_root, split, "images")
         lbl_dir = os.path.join(dataset_root, split, "labels")
 
         for i in range(count):
             img = np.full((416, 416, 3), 120, dtype=np.uint8)
-            # Add synthetic worker head with helmet (class 0: helmet, yellow)
             cv2.circle(img, (150, 150), 35, (0, 220, 255), -1)
-            # Add synthetic worker head without helmet (class 1: no_helmet, hair/skin tone)
             cv2.circle(img, (280, 200), 30, (80, 110, 160), -1)
 
             img_name = f"sample_{i:03d}.jpg"
             lbl_name = f"sample_{i:03d}.txt"
             cv2.imwrite(os.path.join(img_dir, img_name), img)
 
-            # YOLO format: class_id center_x center_y width height (normalized)
             with open(os.path.join(lbl_dir, lbl_name), "w") as f:
                 f.write(f"0 {150/416:.4f} {150/416:.4f} {70/416:.4f} {70/416:.4f}\n")
                 f.write(f"1 {280/416:.4f} {200/416:.4f} {60/416:.4f} {60/416:.4f}\n")
@@ -65,19 +61,8 @@ def train_model(
 
     create_synthetic_ppe_data_if_empty()
 
-    # Load baseline YOLOv8n COCO weights
     model = YOLO("yolov8n.pt")
 
-    # Hyperparameters tailored for CCTV camera perspectives:
-    # - mosaic=1.0: mixes 4 images, simulates multi-worker scenes
-    # - mixup=0.1: blend images to handle occlusions
-    # - hsv_h=0.015, hsv_s=0.5, hsv_v=0.3: light variations in warehouse/factory
-    # - degrees=5.0: slight tilt of cameras
-    # - translate=0.1: shift workers across field of view
-    # - scale=0.3: workers at different distances from camera
-    # - perspective=0.0005: CCTV oblique view distortion
-    # - flipud=0.0: workers are never upside-down
-    # - fliplr=0.5: left-right horizontal symmetry
     results = model.train(
         data=data_yaml,
         epochs=epochs,
@@ -87,7 +72,6 @@ def train_model(
         project=output_dir,
         name="ppe_yolov8n",
         exist_ok=True,
-        # CCTV augmentations
         mosaic=1.0,
         mixup=0.1,
         hsv_h=0.015,

@@ -10,7 +10,7 @@ import numpy as np
 
 @dataclass
 class Detection:
-    bbox: List[float]  # [x1, y1, x2, y2]
+    bbox: List[float]
     confidence: float
     label: str
     attributes: Dict[str, Any]
@@ -32,7 +32,6 @@ def calculate_iou(boxA: List[float], boxB: List[float]) -> float:
 
 def is_contained_or_near(inner_box: List[float], outer_box: List[float], margin_ratio: float = 0.2) -> bool:
     """Checks whether inner_box (e.g. bag) is inside or adjacent to outer_box (e.g. person)."""
-    # Expand outer box slightly
     w = outer_box[2] - outer_box[0]
     h = outer_box[3] - outer_box[1]
     exp_x1 = outer_box[0] - margin_ratio * w
@@ -72,7 +71,6 @@ class OpenVocabDetector:
         print(f"[Detector] Initializing YOLO-World ({model_name}) on device: {self.device}")
         self.model = YOLO(model_name)
 
-        # Assemble custom vocabulary list
         vocab = [self.target_class]
         if "carrying" in self.attributes:
             carry_item = self.attributes["carrying"].lower()
@@ -124,7 +122,6 @@ class OpenVocabDetector:
                     "label": label,
                 })
 
-        # Attribute association
         matched_detections: List[Detection] = []
         requires_carrying = "carrying" in self.attributes
         target_carried_item = self.attributes.get("carrying", "").lower()
@@ -141,7 +138,6 @@ class OpenVocabDetector:
                         matched_attrs["carrying"] = self.attributes.get("carrying", "bag")
                         break
                 if not has_bag:
-                    # If the rule specifically requires carrying a bag, skip persons without a bag
                     continue
 
             matched_detections.append(Detection(

@@ -23,7 +23,6 @@ def evaluate_verifier_metrics(
     os.makedirs(output_dir, exist_ok=True)
 
     if not os.path.exists(scores_csv):
-        # Run verifier first if scores not generated
         print(f"[Notice] '{scores_csv}' not found. Running verifier first...")
         from task3.verifier import CascadedVerifier, create_sample_alerts_if_missing
         create_sample_alerts_if_missing("alerts", "alerts/labels.csv")
@@ -37,13 +36,10 @@ def evaluate_verifier_metrics(
     total_intrusions = int(df["is_intrusion"].sum())
     total_false_alarms = total_alerts - total_intrusions
 
-    # ==========================================================
-    # (a) Edge Model Alone (All 30 alerts sent to customer)
-    # ==========================================================
     edge_tp = total_intrusions
     edge_fp = total_false_alarms
     edge_precision = edge_tp / total_alerts
-    edge_recall = 1.0  # Captures 100% of triggers
+    edge_recall = 1.0
     edge_f1 = 2 * (edge_precision * edge_recall) / (edge_precision + edge_recall)
 
     print("\n[A] Edge Model Alone Performance (Zero Verification):")
@@ -54,9 +50,6 @@ def evaluate_verifier_metrics(
     print(f"  • Recall                    : {edge_recall:.3f} (100.0%)")
     print(f"  • F1-Score                  : {edge_f1:.3f}")
 
-    # ==========================================================
-    # (b) Edge + Secondary Verifier Threshold Sweep
-    # ==========================================================
     thresholds = np.arange(0.30, 0.85, 0.05)
     sweep_results = []
 
@@ -70,7 +63,6 @@ def evaluate_verifier_metrics(
         precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
         recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
         f1 = (2 * precision * recall) / (precision + recall + 1e-9)
-        # F2 score weights recall 2x higher than precision (vital for physical security)
         f2 = (5 * precision * recall) / (4 * precision + recall + 1e-9)
 
         sweep_results.append({
@@ -88,8 +80,6 @@ def evaluate_verifier_metrics(
 
     sweep_df = pd.DataFrame(sweep_results)
 
-    # Optimal threshold selection:
-    # Prioritizes high security recall (Recall >= 0.95), then maximizes precision
     high_recall_candidates = sweep_df[sweep_df["Recall"] >= 0.95]
     if len(high_recall_candidates) > 0:
         optimal_idx = high_recall_candidates["F2-Score"].idxmax()
@@ -108,7 +98,6 @@ def evaluate_verifier_metrics(
     print("\nThreshold Sweep Table:")
     print(sweep_df[["Threshold", "TP", "FP", "FN", "Precision", "Recall", "F1-Score", "False Alarm Reduction"]].to_markdown(index=False))
 
-    # Save detailed evaluation markdown
     eval_md_path = os.path.join(output_dir, "verifier_evaluation.md")
     with open(eval_md_path, "w", encoding="utf-8") as f:
         f.write("# Task 3: Cascaded Verifier Evaluation & Threshold Rationale\n\n")

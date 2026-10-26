@@ -41,10 +41,7 @@ class EventEmitter:
         masked_frame: np.ndarray,
     ) -> Dict[str, Any]:
         """Constructs an event dictionary matching event_schema.json."""
-        # Convert masked frame to base64 JPEG
         evidence_b64 = frame_to_base64_jpeg(masked_frame, quality=80)
-
-        # needs_verification set to true if detection confidence is borderline (< 0.65)
         needs_verification = violation.confidence < self.borderline_threshold
 
         event = {
@@ -65,7 +62,6 @@ class EventEmitter:
             "needs_verification": bool(needs_verification),
         }
 
-        # Validate against schema if available
         if self.schema:
             try:
                 jsonschema.validate(instance=event, schema=self.schema)

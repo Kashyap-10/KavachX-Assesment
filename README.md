@@ -11,15 +11,12 @@ Automated active safety surveillance edge-to-cloud intelligence system.
 
 ### 2. Environment Setup
 ```bash
-# Clone the repository and enter directory
 git clone https://github.com/Kashyap-10/KavachX-Assesment.git
 cd KavachX-Assesment
 
-# Create and activate virtual environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 
-# Install pinned dependencies
 pip install -r requirements.txt
 ```
 
@@ -30,7 +27,6 @@ pip install -r requirements.txt
 Converts natural language rules into open-vocabulary detection, tracks targets with ByteTrack inside polygon zones, measures dwell time, blurs face/head regions for privacy, and emits schema-compliant JSON events.
 
 ```bash
-# Execute end-to-end Task 1 pipeline:
 python task1/run_task1.py \
     --rule "Alert me if a person carrying a bag enters the loading bay and stays more than 10 seconds." \
     --video clips/loading_bay.mp4 \

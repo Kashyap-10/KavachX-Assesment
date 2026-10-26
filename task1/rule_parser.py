@@ -77,7 +77,6 @@ class RuleParser:
         """Deterministic semantic NLP parser using pattern extraction and entity matching."""
         lower_rule = rule_text.lower().strip()
 
-        # 1. Extract dwell threshold (e.g. 'stays more than 10 seconds', '> 5s', 'dwells 15 sec')
         dwell_match = re.search(
             r"(?:stays?|dwells?|remains?|more than|greater than|at least|exceeds?|over|>)\s*(\d+(?:\.\d+)?)\s*(?:seconds?|secs?|s|minutes?|mins?|m)?",
             lower_rule,
@@ -89,7 +88,6 @@ class RuleParser:
                 val *= 60.0
             dwell_s = val
 
-        # 2. Extract zone name (e.g. 'enters the loading bay', 'in the warehouse', 'inside zone_a')
         zone_match = re.search(
             r"(?:enters?|inside|in|into|within)\s+(?:the\s+)?([a-zA-Z0-9_-]+(?:\s+[a-zA-Z0-9_-]+)?)",
             lower_rule,
@@ -97,12 +95,10 @@ class RuleParser:
         zone = "loading_bay"
         if zone_match:
             raw_zone = zone_match.group(1).strip()
-            # clean auxiliary stop words
             raw_zone = re.sub(r"\b(and|stays?|more|with|for|during|where|if)\b.*", "", raw_zone).strip()
             if raw_zone:
                 zone = raw_zone.replace(" ", "_")
 
-        # 3. Extract target class (e.g. 'person', 'worker', 'vehicle', 'forklift', 'car')
         known_classes = ["person", "worker", "human", "pedestrian", "forklift", "vehicle", "car", "truck"]
         target_class = "person"
         for cls in known_classes:
@@ -110,7 +106,6 @@ class RuleParser:
                 target_class = "person" if cls in ["worker", "human", "pedestrian"] else cls
                 break
 
-        # 4. Extract visual attributes (e.g. 'carrying a bag', 'wearing helmet', 'with backpack')
         attributes = {}
         carry_match = re.search(r"(?:carrying|with|holds?|holding)\s+(?:a\s+|an\s+)?([a-zA-Z0-9_-]+)", lower_rule)
         if carry_match:
@@ -124,7 +119,6 @@ class RuleParser:
             if item not in ["the", "in", "and", "stays", "more"] and "carrying" not in attributes:
                 attributes["wearing"] = item
 
-        # 5. Generate rule_id slug
         slug_parts = [zone, target_class]
         if "carrying" in attributes:
             slug_parts.append(attributes["carrying"])

@@ -14,7 +14,6 @@ import pandas as pd
 from PIL import Image
 import torch
 
-# Engineered text prompts
 POSITIVE_PROMPTS = [
     "a security camera snapshot of an unauthorized human intruder trespassing at night",
     "a person burglar breaking into private property at night on cctv footage",
@@ -50,14 +49,10 @@ def create_sample_alerts_if_missing(alerts_dir: str = "alerts", labels_csv: str 
         if os.path.exists(img_path):
             continue
 
-        # Create dark nighttime IR camera background
         img = np.random.randint(15, 35, (400, 600, 3), dtype=np.uint8)
-
-        # Add IR timestamp overlay
         cv2.putText(img, f"CAM-03 NIGHT {row['filename']}", (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (180, 180, 180), 1)
 
         if row["is_intrusion"] == 1:
-            # Human intruder silhouette (head, torso, legs)
             cv2.circle(img, (300, 150), 22, (180, 180, 180), -1)
             cv2.rectangle(img, (275, 175), (325, 270), (160, 160, 160), -1)
             cv2.line(img, (285, 270), (280, 340), (140, 140, 140), 6)
@@ -65,13 +60,10 @@ def create_sample_alerts_if_missing(alerts_dir: str = "alerts", labels_csv: str 
         else:
             cat = row["category"]
             if cat in ["shadows", "glare"]:
-                # Cast shadow / glare streak
                 cv2.ellipse(img, (300, 250), (120, 40), 30, 0, 360, (70, 70, 70), -1)
             elif cat in ["animal", "insect"]:
-                # Small animal or bug near edge
                 cv2.ellipse(img, (240, 300), (25, 15), 0, 0, 360, (130, 130, 130), -1)
             elif cat in ["rain", "fog"]:
-                # Streaks
                 for _ in range(50):
                     rx = np.random.randint(0, 600)
                     ry = np.random.randint(0, 400)
@@ -101,7 +93,6 @@ class CascadedVerifier:
             self.model.eval()
             self.tokenizer = open_clip.get_tokenizer(model_name)
 
-            # Precompute normalized text embeddings
             with torch.no_grad():
                 pos_tokens = self.tokenizer(POSITIVE_PROMPTS).to(self.device)
                 neg_tokens = self.tokenizer(NEGATIVE_PROMPTS).to(self.device)
@@ -137,12 +128,10 @@ class CascadedVerifier:
                 prob = exp_pos / (exp_pos + exp_neg + 1e-12)
             return float(np.clip(prob, 0.0, 1.0))
 
-        # Heuristic vision fallback for offline / disconnected environments
         img = cv2.imread(image_path)
         if img is None:
             return 0.5
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        # Check aspect ratio of prominent contours (human silhouette is tall and vertical)
         _, thresh = cv2.threshold(gray, 50, 255, cv2.THRESH_BINARY)
         contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         tall_humanoid_found = False

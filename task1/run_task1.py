@@ -3,7 +3,7 @@ Task 1: Plain-English Rule to Event JSON Pipeline.
 End-to-end pipeline:
 1. Parse natural language rule
 2. Open-vocabulary detection (YOLO-World)
-3. Multi-object tracking & polygon dwell time calculation (ByteTrack)
+3. Multi-object tracking & polygon dwell time calculation
 4. Face & head privacy masking
 5. JSON event emission compliant with event_schema.json
 """
@@ -16,7 +16,6 @@ from typing import Optional
 import cv2
 import numpy as np
 
-# Ensure root directory is on python path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from task1.detector import OpenVocabDetector
@@ -39,23 +38,18 @@ def create_mock_video_if_missing(video_path: str, duration_sec: int = 15, fps: i
     out = cv2.VideoWriter(video_path, fourcc, fps, (w, h))
 
     total_frames = duration_sec * fps
-    # Draw background, warehouse zone, and a moving person carrying a bag inside the zone
     for frame_idx in range(total_frames):
-        frame = np.full((h, w, 3), 40, dtype=np.uint8)  # Dark warehouse background
+        frame = np.full((h, w, 3), 40, dtype=np.uint8)
 
-        # Draw loading bay floor marking
         zone_pts = np.array([[100, 150], [550, 150], [580, 450], [80, 450]], np.int32)
         cv2.polylines(frame, [zone_pts], isClosed=True, color=(0, 255, 255), thickness=2)
         cv2.putText(frame, "LOADING BAY", (120, 180), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
 
-        # Draw a simulated person standing inside loading bay
-        # Position: inside zone (x=300, y=250 to 390)
         px1, py1, px2, py2 = 280, 220, 340, 410
-        cv2.rectangle(frame, (px1, py1), (px2, py2), (180, 180, 180), -1)  # Body
-        cv2.circle(frame, (310, 205), 20, (200, 200, 200), -1)             # Head
+        cv2.rectangle(frame, (px1, py1), (px2, py2), (180, 180, 180), -1)
+        cv2.circle(frame, (310, 205), 20, (200, 200, 200), -1)
 
-        # Draw a carried bag beside the person
-        cv2.rectangle(frame, (335, 300), (370, 360), (0, 140, 255), -1)   # Bag
+        cv2.rectangle(frame, (335, 300), (370, 360), (0, 140, 255), -1)
         cv2.putText(frame, f"Frame {frame_idx}/{total_frames}", (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1)
 
         out.write(frame)
@@ -77,7 +71,6 @@ def run_pipeline(
     print("=" * 70)
     print(f"Rule: \"{rule_text}\"")
 
-    # Step 1: Parse rule
     parser = RuleParser()
     config = parser.parse(rule_text)
     print(f"[1/5] Rule Parsed Successfully:")
@@ -87,7 +80,6 @@ def run_pipeline(
     print(f"      - Zone: {config.zone}")
     print(f"      - Dwell Threshold: {config.dwell_threshold_s}s")
 
-    # Step 2: Load zones
     if not os.path.exists(zones_path):
         raise FileNotFoundError(f"Zones configuration file not found at: {zones_path}")
     zones = load_zones(zones_path)
@@ -100,7 +92,6 @@ def run_pipeline(
         zone_polygon = zones[config.zone]
     print(f"[2/5] Zone '{config.zone}' loaded ({len(zone_polygon.exterior.coords)} vertices)")
 
-    # Prepare video
     if not os.path.exists(video_path):
         create_mock_video_if_missing(video_path)
 
@@ -112,7 +103,6 @@ def run_pipeline(
     total_video_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     print(f"[3/5] Video Stream: {video_path} (FPS: {fps:.1f}, Frames: {total_video_frames})")
 
-    # Step 3: Initialize components
     detector = OpenVocabDetector(
         target_class=config.target_class,
         attributes=config.attributes,
@@ -128,7 +118,6 @@ def run_pipeline(
     privacy_masker = PrivacyMasker()
     emitter = EventEmitter()
 
-    # Step 4: Process video
     print("[4/5] Running Detection, Tracking & Dwell Time Analysis...")
     emitted_events = []
     frame_count = 0
@@ -141,27 +130,20 @@ def run_pipeline(
         if max_frames and frame_count > max_frames:
             break
 
-        # Detect
         detections = detector.detect(frame)
-
-        # Track & check dwell violations
         violations = tracker.update(detections)
 
-        # Process any violations
         for violation in violations:
             print(f"\n[VIOLATION DETECTED] Track #{violation.track_id} exceeded dwell time: {violation.dwell_s}s in {violation.zone}")
 
-            # Mask faces for privacy
             person_boxes = [d.bbox for d in detections if d.label == "person"] or [violation.person_bbox]
             masked_frame = privacy_masker.mask_evidence_frame(frame, person_boxes)
 
-            # Emit event
             event = emitter.create_event(config, violation, masked_frame)
             event_path = emitter.save_event(event, output_dir)
             emitted_events.append(event)
             print(f"  -> Saved event JSON: {event_path}")
 
-            # Save visual evidence frame image
             frame_img_path = os.path.join(output_dir, f"evidence_{event['event_id'][:8]}.jpg")
             cv2.imwrite(frame_img_path, masked_frame)
             print(f"  -> Saved privacy-masked frame: {frame_img_path}")
@@ -173,7 +155,6 @@ def run_pipeline(
     print(f"\n[5/5] Processing complete. Total frames processed: {frame_count}")
     print(f"      Total violations emitted: {len(emitted_events)}")
 
-    # Summary
     if len(emitted_events) > 0:
         sample_path = os.path.join(output_dir, "sample_event.json")
         with open(sample_path, "w", encoding="utf-8") as f:

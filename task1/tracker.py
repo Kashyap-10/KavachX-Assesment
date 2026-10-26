@@ -47,7 +47,6 @@ class DwellTracker:
         self.iou_threshold = iou_threshold
 
         self.next_track_id = 1
-        # track_id -> track dict
         self.tracks: Dict[int, Dict[str, Any]] = {}
 
     def update(
@@ -60,7 +59,6 @@ class DwellTracker:
         iso_now = now.isoformat()
         violations: List[TrackViolation] = []
 
-        # Age active tracks
         for t_id in list(self.tracks.keys()):
             self.tracks[t_id]["lost_frames"] += 1
             if self.tracks[t_id]["lost_frames"] > self.max_lost_frames:
@@ -69,7 +67,6 @@ class DwellTracker:
         if len(detections) == 0:
             return violations
 
-        # Associate existing tracks with new detections using IoU / Centroid distance
         matched_det_indices = set()
         matched_track_ids = set()
 
@@ -95,7 +92,6 @@ class DwellTracker:
                 track["attributes"] = det.attributes
                 track["lost_frames"] = 0
 
-                # Dwell time logic
                 foot = get_foot_position(det.bbox)
                 is_inside = is_point_in_zone(foot, self.zone_polygon)
 
@@ -124,7 +120,6 @@ class DwellTracker:
                 else:
                     track["in_zone"] = False
 
-        # Create new tracks for unmatched detections
         for d_idx, det in enumerate(detections):
             if d_idx not in matched_det_indices:
                 foot = get_foot_position(det.bbox)
