@@ -12,7 +12,8 @@ Automated active safety surveillance edge-to-cloud intelligence system.
 ### 2. Environment Setup
 ```bash
 # Clone the repository and enter directory
-cd kavachx-assessment
+git clone https://github.com/Kashyap-10/KavachX-Assesment.git
+cd KavachX-Assesment
 
 # Create and activate virtual environment
 python3 -m venv venv

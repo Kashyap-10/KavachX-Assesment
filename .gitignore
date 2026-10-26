@@ -25,6 +25,7 @@ alerts/*.png
 
 # Outputs / artifacts
 task1/outputs/*.jpg
+!task1/outputs/masked_frame_*.jpg
 task1/outputs/*.png
 task2/outputs/*.onnx
 task2/outputs/*.pt
