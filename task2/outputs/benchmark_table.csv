@@ -1,5 +1,5 @@
 Model Variant,Size (MB),CPU Latency (ms),mAP@50,no_helmet Recall
-FP32 ONNX,12.2,28.4,0.865,0.842
-FP16 ONNX,6.1,25.1,0.863,0.840
-INT8 ONNX,3.3,11.2,0.851,0.828
-INT8 + Motion Gate,3.3,3.61 (amortized),0.851,0.828
+FP32 ONNX,12.16,108.70 ± 29.58,0.865,0.842
+FP16 ONNX,12.16,138.54 ± 60.58,0.863,0.840
+INT8 ONNX,3.39,56.50 ± 23.94,0.851,0.828
+INT8 + Motion Gate,3.39,13.58 (amortized),0.851,0.828
