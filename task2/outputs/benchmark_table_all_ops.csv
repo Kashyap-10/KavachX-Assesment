@@ -1,0 +1,4 @@
+Model Variant,Size (MiB),CPU Latency (ms),mAP@50,helmet Recall,no_helmet Recall
+FP32 ONNX,11.58,12.465,0.501414,0.656595,0.294118
+FP16 ONNX,5.829,12.96,0.501651,0.655862,0.294118
+INT8 ONNX,3.238,5.318,0.0,0.0,0.0

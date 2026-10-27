@@ -1,0 +1,29 @@
+{
+  "mAP50": 0.5014144394676125,
+  "mAP50_95": 0.21608094792132487,
+  "per_class": [
+    {
+      "Class": "helmet",
+      "Images": 49,
+      "Instances": 107,
+      "Box-P": 0.693839,
+      "Box-R": 0.656596,
+      "Box-F1": 0.674704,
+      "mAP50": 0.711494,
+      "mAP50-95": 0.341637
+    },
+    {
+      "Class": "no_helmet",
+      "Images": 11,
+      "Instances": 17,
+      "Box-P": 0.465911,
+      "Box-R": 0.294118,
+      "Box-F1": 0.360599,
+      "mAP50": 0.291335,
+      "mAP50-95": 0.090525
+    }
+  ],
+  "checkpoint_sha256": "747450920c3c6c8930b6daf3422fedb10ff4347c21a377d15bdd60ef43054a1b",
+  "validation": "Public substitute, 60 images; square 416, batch=1, CPU",
+  "failure_diagnostic": "Fixed confidence >=0.25 and matching IoU >=0.5"
+}

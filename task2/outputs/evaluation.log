@@ -1,0 +1,39 @@
+Ultralytics 8.3.235 🚀 Python-3.12.14 torch-2.8.0 CPU (Apple M4)
+Model summary (fused): 72 layers, 3,006,038 parameters, 0 gradients, 8.1 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 2934.2±2098.0 MB/s, size: 81.4 KB)
+[K[34m[1mval: [0mScanning /Users/ajayrathore/Documents/Codex/2026-10-26/https-github-com-kashyap-10-kavachx/outputs/KavachX-Assesment/data/ppe/labels/val.cache... 60 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 60/60 14.0Mit/s 0.0s[K[34m[1mval: [0mScanning /Users/ajayrathore/Documents/Codex/2026-10-26/https-github-com-kashyap-10-kavachx/outputs/KavachX-Assesment/data/ppe/labels/val.cache... 60 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 60/60 2.0Mit/s 0.0s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 10% ━─────────── 6/60 15.8it/s 0.1s<3.4s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 22% ━━╸───────── 13/60 29.3it/s 0.2s<1.6s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 33% ━━━━──────── 20/60 39.8it/s 0.3s<1.0s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 45% ━━━━━─────── 27/60 47.5it/s 0.4s<0.7s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 57% ━━━━━━╸───── 34/60 53.2it/s 0.5s<0.5s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 68% ━━━━━━━━──── 41/60 57.2it/s 0.7s<0.3s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 80% ━━━━━━━━━╸── 48/60 60.6it/s 0.8s<0.2s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 92% ━━━━━━━━━━━─ 55/60 62.9it/s 0.9s<0.1s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 60/60 64.4it/s 0.9s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 60/60 64.4it/s 0.9s
+                   all         60        124       0.58      0.475      0.501      0.216
+                helmet         49        107      0.694      0.657      0.711      0.342
+             no_helmet         11         17      0.466      0.294      0.291     0.0905
+Speed: 0.1ms preprocess, 12.6ms inference, 0.0ms loss, 0.5ms postprocess per image
+Results saved to [1m/Users/ajayrathore/Documents/Codex/2026-10-26/https-github-com-kashyap-10-kavachx/outputs/KavachX-Assesment/task2/outputs/baseline_validation[0m
+{
+  "mAP50": 0.5014144394676125,
+  "mAP50_95": 0.21608094792132487,
+  "per_class": [
+    {
+      "Class": "helmet",
+      "Images": 49,
+      "Instances": 107,
+      "Box-P": 0.693839,
+      "Box-R": 0.656596,
+      "Box-F1": 0.674704,
+      "mAP50": 0.711494,
+      "mAP50-95": 0.341637
+    },
+    {
+      "Class": "no_helmet",
+      "Images": 11,
+      "Instances": 17,
+      "Box-P": 0.465911,
+      "Box-R": 0.294118,
+      "Box-F1": 0.360599,
+      "mAP50": 0.291335,
+      "mAP50-95": 0.090525
+    }
+  ],
+  "checkpoint_sha256": "747450920c3c6c8930b6daf3422fedb10ff4347c21a377d15bdd60ef43054a1b",
+  "validation": "Public substitute, 60 images; square 416, batch=1, CPU",
+  "failure_diagnostic": "Fixed confidence >=0.25 and matching IoU >=0.5"
+}

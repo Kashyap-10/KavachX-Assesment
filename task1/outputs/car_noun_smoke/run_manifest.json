@@ -1,0 +1,63 @@
+{
+  "rule": {
+    "rule_id": "parking_car__dwell_gt_3s",
+    "rule_text": "Alert me if a car enters the parking and stays more than 3 seconds.",
+    "target_class": "car",
+    "attributes": {},
+    "zone": "parking",
+    "dwell_threshold_s": 3.0,
+    "comparison": "gt"
+  },
+  "video": {
+    "filename": "mot17-04.mp4",
+    "sha256": "ab0d2fc03bce5e112abe9a173de7a2d70b39875c0af3eca49d6160c6e317e495",
+    "fps": 30.0,
+    "width": 960,
+    "height": 540,
+    "frames": 1050,
+    "timebase": "constant-rate source frame index / FPS"
+  },
+  "zones_sha256": "c087c185de23ed04ef7f44fe5d7a4a3403977ea397ea0958f35e8bfb4d2072c2",
+  "model": {
+    "filename": "yolov8s-worldv2.pt",
+    "sha256": "9b2c17ab6124a913e9b3a5c170617920d91b0f01111a8479da69f00e2cf27792",
+    "vocabulary": [
+      "car",
+      "person"
+    ],
+    "imgsz": 960,
+    "device": "cpu",
+    "confidence_threshold": 0.1
+  },
+  "tracking": {
+    "algorithm": "Ultralytics ByteTrack",
+    "stride": 3,
+    "sample_fps": 10.0,
+    "lost_buffer_s": 2,
+    "dwell": "Accumulated adjacent qualifying observations; no credit for missed, outside or unqualified intervals"
+  },
+  "timestamp_basis": "run start UTC anchor, NOT original capture time",
+  "video_start_anchor": "2026-10-26T12:54:24.960317+00:00",
+  "processed_samples": 50,
+  "processing_wall_s": 8.632266000000527,
+  "events": [
+    {
+      "event_file": "event_a08ab2fe-a8af-4952-a475-54646fa5fb3e.json",
+      "evidence_file": "evidence_a08ab2fe-a8af-4952-a475-54646fa5fb3e.jpg",
+      "track_id": 1,
+      "video_time_s": 3.1,
+      "dwell_s": 3.1,
+      "confidence": 0.922249972820282
+    }
+  ],
+  "review_frames": 0,
+  "review_samples": [],
+  "python": "3.12.14",
+  "source_frame_limit": 150,
+  "complete_video": false,
+  "limitations": [
+    "Spatial association does not prove carrying or ownership.",
+    "Identity switches or long occlusions may split physical individuals.",
+    "Whole-frame blur plus stronger detected head/face masks sacrifices visual detail for privacy."
+  ]
+}

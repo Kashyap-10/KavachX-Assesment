@@ -1,0 +1,25 @@
+$ /Users/ajayrathore/Documents/Codex/2026-10-26/https-github-com-kashyap-10-kavachx/work/task3-clean/bin/python -m unittest discover -s tests -p test_task3.py -v
+test_duplicates_traversal_hash_mismatch_and_recording_leakage_are_rejected (test_task3.Task3Tests.test_duplicates_traversal_hash_mismatch_and_recording_leakage_are_rejected) ... ok
+test_metrics_count_missed_positive_and_false_alarm (test_task3.Task3Tests.test_metrics_count_missed_positive_and_false_alarm) ... ok
+test_padding_preserves_edges_and_aspect_ratio (test_task3.Task3Tests.test_padding_preserves_edges_and_aspect_ratio) ... ok
+test_recall_floor_overrides_better_precision_and_boundary_is_inclusive (test_task3.Task3Tests.test_recall_floor_overrides_better_precision_and_boundary_is_inclusive) ... ok
+test_score_table_rejects_nan_and_missing_columns (test_task3.Task3Tests.test_score_table_rejects_nan_and_missing_columns) ... ok
+test_test_labels_cannot_change_selected_threshold (test_task3.Task3Tests.test_test_labels_cannot_change_selected_threshold) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK
+
+$ /Users/ajayrathore/Documents/Codex/2026-10-26/https-github-com-kashyap-10-kavachx/work/task3-clean/bin/python task3/verify_demo.py --rescore
+Verified 50 real images and original frame annotations
+{
+  "verified_images": 50,
+  "test_images": 30,
+  "calibration_images": 20,
+  "fresh_inference": true,
+  "maximum_score_error": 0.0,
+  "status": "Artifact integrity verified; this does not establish deployment accuracy"
+}
+
+Weight cache reused from local source; weights are deliberately excluded from ZIP.

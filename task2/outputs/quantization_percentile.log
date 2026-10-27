@@ -1,0 +1,22 @@
+Ultralytics 8.3.235 🚀 Python-3.12.14 torch-2.8.0 CPU (Apple M4)
+ERROR ❌ Error writing to /Users/ajayrathore/Library/Application Support/Ultralytics/settings.json: [Errno 1] Operation not permitted: '/Users/ajayrathore/Library/Application Support/Ultralytics/settings.json'
+Model summary (fused): 72 layers, 3,006,038 parameters, 0 gradients, 8.1 GFLOPs
+
+[34m[1mPyTorch:[0m starting from 'task2/outputs/best.pt' with input shape (1, 3, 416, 416) BCHW and output shape(s) (1, 6, 3549) (5.9 MB)
+
+[34m[1mONNX:[0m starting export with onnx 1.19.1 opset 17...
+[34m[1mONNX:[0m export success ✅ 0.2s, saved as 'task2/outputs/best.onnx' (11.6 MB)
+
+Export complete (0.3s)
+Results saved to [1m/Users/ajayrathore/Documents/Codex/2026-10-26/https-github-com-kashyap-10-kavachx/outputs/KavachX-Assesment/task2/outputs[0m
+Predict:         yolo predict task=detect model=task2/outputs/best.onnx imgsz=416  
+Validate:        yolo val task=detect model=task2/outputs/best.onnx imgsz=416 data=/content/kavachx_20261026_115329/bundle/data/ppe/data.yaml  
+Visualize:       https://netron.app
+Collecting tensor data and making histogram ...
+Finding optimal threshold for each tensor using 'percentile' algorithm ...
+Number of tensors : 243
+Number of histogram bins : 2048
+Percentile : (0.010000000000005116,99.99)
+Verified model_fp32.onnx: 11.58 MiB
+Verified model_fp16.onnx: 5.83 MiB
+Verified model_int8_percentile.onnx: 3.24 MiB

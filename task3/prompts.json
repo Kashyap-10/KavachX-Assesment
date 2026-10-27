@@ -1,0 +1,15 @@
+{
+  "positive": [
+    "a night vision image of a person standing or walking outdoors",
+    "a thermal infrared image of one or more human figures",
+    "a surveillance image of a person with a head, torso, arms and legs"
+  ],
+  "negative": [
+    "a night vision image of a wild animal",
+    "a thermal infrared image of a dog, deer or another four legged animal",
+    "a surveillance image of empty ground, vegetation or rocks",
+    "a surveillance image of water, reflections or camera noise"
+  ],
+  "temperature": 0.05,
+  "label_semantics": "Human presence proxy; an image alone cannot establish authorization or intent."
+}

@@ -1,0 +1,2612 @@
+{
+  "substitute": true,
+  "source": "https://github.com/ultralytics/assets/releases/download/v0.0.0/construction-ppe.zip",
+  "source_sha256": "bef8dcb599aa4e9d9f5e602cb6fa7143d3c84d7f6a0ff40463d7f2a4c2632ccc",
+  "documentation": "https://docs.ultralytics.com/datasets/detect/construction-ppe/",
+  "license": "AGPL-3.0 as declared by Ultralytics",
+  "attribution": "Construction-PPE: Dalvi, Singh, Bhingarde and Chalke (2025), Ultralytics",
+  "seed": 42,
+  "original_class_mapping": {
+    "0": 0,
+    "7": 1
+  },
+  "counts": {
+    "train": {
+      "images": 240,
+      "instances": {
+        "helmet": 263,
+        "no_helmet": 87
+      }
+    },
+    "val": {
+      "images": 60,
+      "instances": {
+        "helmet": 107,
+        "no_helmet": 17
+      }
+    }
+  },
+  "images": [
+    {
+      "split": "train",
+      "source": "images/train/image67.jpeg",
+      "sha256": "32d3c1915ff921d7ee666bc5776f3237672217266e8604d0766b9b15b986e3de",
+      "labels": [
+        "0 0.543219 0.289109 0.220156 0.133750"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1247.jpg",
+      "sha256": "2dfd49fdb6e55e4c52f5f1ed204a7cc3b79f816ed5eed2b1afade5a8fae57a5e",
+      "labels": [
+        "1 0.323703 0.199242 0.261906 0.281391"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image743.jpg",
+      "sha256": "40361c95d964bec4ba4389c930d3d7c54197a373b9506b386c9ef1fa226aba06",
+      "labels": [
+        "0 0.379648 0.327813 0.205766 0.119375"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1026.jpg",
+      "sha256": "12a400dfeb3ff3aa8d5277cb439535938052f6077581867ac0c3b9ca81498ff8",
+      "labels": [
+        "0 0.498914 0.085500 0.209734 0.088531"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image38.jpg",
+      "sha256": "3c6853995df2eb3d13f658793ced154c1dbc130be77c1a83ed81169d671aae40",
+      "labels": [
+        "0 0.688195 0.402281 0.230172 0.329813"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image449.jpg",
+      "sha256": "63d3434a8e759c1029d94ea8cebc7dae52ff3f42535af9261b39aa8375003a2f",
+      "labels": [
+        "0 0.576094 0.094711 0.140313 0.127141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image186.jpg",
+      "sha256": "206d9d5c531fae9c36aa1c66a24ad0f6ca4b6f1dd0aadb40a06dce98032ed3af",
+      "labels": [
+        "0 0.501633 0.095266 0.420641 0.190531"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1036.jpg",
+      "sha256": "a014d01ecd6ab693a8c6b2bf91e59f2bd03418abf8ce35a9e924aace732a2e9e",
+      "labels": [
+        "0 0.229438 0.331172 0.233969 0.182031",
+        "0 0.080141 0.225109 0.160281 0.199344"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1316.jpg",
+      "sha256": "ac51991231dd8cc69bd28ddc0a72265039df6047c32b7bf1d841a4f0e170e62c",
+      "labels": [
+        "1 0.294422 0.210297 0.261906 0.084125"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1232.jpg",
+      "sha256": "21d36ce9c09ed7b50d8d2dd46dafb259ed268b4c2b2b921b13f69ff907acf1b4",
+      "labels": [
+        "1 0.493500 0.286797 0.303250 0.413625"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1123.jpg",
+      "sha256": "2ca794c213d4a249400a248036f07cf54bcc77b264b2df566ae93eceeae8dd19",
+      "labels": [
+        "1 0.586437 0.319969 0.211937 0.166656"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1040.jpg",
+      "sha256": "cac47902c35d50812177bdd254c12ee7220f8a3e68781aedd7dc6ab6bf79afaa",
+      "labels": [
+        "0 0.502273 0.076844 0.225109 0.114937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image580.jpg",
+      "sha256": "9e8065ccd96e7a8a43724be8809f044268f4d97522d341f9b62b954c1ca1ee61",
+      "labels": [
+        "0 0.451664 0.060000 0.255141 0.120000"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image240.jpg",
+      "sha256": "20f94dd954bbd7fbbb103f2d05e881b611768bfd75df544a73a1a1912097ca04",
+      "labels": [
+        "0 0.430203 0.081797 0.230156 0.087313"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image495.jpg",
+      "sha256": "702b8fa6bbb32ff11d5f31a72197dc6e1f20e5d53b2089415f1e696ccad31dcb",
+      "labels": [
+        "0 0.633805 0.117031 0.179891 0.120937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1321.jpg",
+      "sha256": "ee28dce0ea3db8e7a7bbce07c4a68ebe5ad5ff2c30dab6cba486ef5611b795c2",
+      "labels": [
+        "1 0.898414 0.544445 0.133328 0.071422",
+        "1 0.441250 0.337281 0.133344 0.071438",
+        "1 0.043648 0.468258 0.087297 0.071422"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image376.jpg",
+      "sha256": "24551a5f78337a68f1a5df04628e0acb4ea8456bccafecbb077c8d80cb2e96dd",
+      "labels": [
+        "0 0.497578 0.311117 0.093469 0.111516"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1413.jpg",
+      "sha256": "cd9edb2aed28ffda86c4b83e739d4d8192b74f0f5e8bc09ff8a005d4d5a4fd37",
+      "labels": [
+        "1 0.354945 0.328203 0.203703 0.201656"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image299.jpg",
+      "sha256": "29ac1640579fd7b8f98d6c01002d7c7c5b6f0f46c1eae00d520f7218ce8f2fed",
+      "labels": [
+        "0 0.237297 0.139695 0.176156 0.114359"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1101.jpg",
+      "sha256": "8f9e09912dc09e06392c1dd5392805b26f43cc562b92819617a44ba5a7b7aa08",
+      "labels": [
+        "0 0.535727 0.160187 0.216453 0.099562"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1053.jpg",
+      "sha256": "b8070ace7b10398bc1a316b4545bd9889a06184aa2e2025d593b97736f99af8a",
+      "labels": [
+        "0 0.479438 0.142852 0.192844 0.086359"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1182.jpg",
+      "sha256": "ea88d4cec0bdcf4794b51022895fac13fd4016bb9d617df6249ea5b82a6850c2",
+      "labels": [
+        "1 0.521414 0.243016 0.174891 0.156375"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image823.jpg",
+      "sha256": "638c0e58b6670e88558f7d0b8769e43687d851b63a0ea603c622f9d323e38771",
+      "labels": [
+        "0 0.695891 0.091992 0.214500 0.110172"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image593.jpg",
+      "sha256": "0ae0025b4c2b3788f8dd645fd05e5bfb44f9dea2d92edef2e6020b8a2a3e8fdc",
+      "labels": [
+        "0 0.284000 0.281289 0.162625 0.094641"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image416.jpg",
+      "sha256": "8c625c47abf56a2bbe8a1a50dd45c12285c9906c0408de39eed6d765574e1e7d",
+      "labels": [
+        "0 0.624125 0.088102 0.241125 0.152234"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image788.jpg",
+      "sha256": "e65976a8f16240e082055419a3b0a5ed839319a490432b0faea86de20d18c2f9",
+      "labels": [
+        "0 0.217094 0.488695 0.090531 0.137859"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image890.jpg",
+      "sha256": "b5c29407bb373b3593c019d358018b8315eb96c547f3a444cb1175df631339ca",
+      "labels": [
+        "0 0.577813 0.148266 0.177500 0.088969"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image984.jpg",
+      "sha256": "dc0764076ac39cae9eb6380f50d6092d1d0652ce349ff081a1c7dd0dcd9d1c74",
+      "labels": [
+        "0 0.501781 0.296734 0.135500 0.065937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image819.jpg",
+      "sha256": "19d5db2a73a4c62715393d21080d04ff651478e3a54917176c9eeb2070ea8959",
+      "labels": [
+        "0 0.251078 0.240266 0.130094 0.082469"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image794.jpg",
+      "sha256": "500c47100231ce489b143df7f5542297c49a70da57b19f474c503a53b28f1457",
+      "labels": [
+        "0 0.451297 0.294375 0.184188 0.121000"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image61.jpg",
+      "sha256": "2db6d632609218d71a0dfdfde43ea03f028989efea2c1b2083129f078e1ecb2a",
+      "labels": [
+        "0 0.482523 0.096719 0.098766 0.090531"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image317.jpg",
+      "sha256": "2eb8e8a9d2e822ac129fb68365d8873dcaffc988ad0b8dc733e22bc307976cc1",
+      "labels": [
+        "0 0.547602 0.076172 0.088891 0.092062"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image589.jpg",
+      "sha256": "c13ec440c3627a708c3fbf1e000be220c96800e535290c0f9bc622dbc4e72e77",
+      "labels": [
+        "0 0.243836 0.192812 0.152266 0.094656"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1052.jpg",
+      "sha256": "08f68636630a72f47c7c4981c2498915f9c88548fba9675494b6c85907e10a2b",
+      "labels": [
+        "0 0.493508 0.135281 0.186359 0.088531"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1015.jpg",
+      "sha256": "3fc956ea7fff82a7671c85f0d1c21ac82dfcceb3d361c8662a9eb70638d82a11",
+      "labels": [
+        "0 0.492812 0.181062 0.164500 0.086250"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image405.jpg",
+      "sha256": "2b71e8246098c7145bead4544e60b8ca63766890a0eb38c9e52353bab819860a",
+      "labels": [
+        "0 0.532937 0.029359 0.130687 0.058719"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image374.jpg",
+      "sha256": "630019dbc01deb74156ea63b67ccf13934da9e92c701df30dd47ed42c2ac2a64",
+      "labels": [
+        "0 0.380664 0.245164 0.089922 0.065953"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image895.jpg",
+      "sha256": "c835864d2ad9c9dd05398d956e647c68822bcddeadff7da3997bca4128089a19",
+      "labels": [
+        "0 0.480523 0.136367 0.177703 0.104109"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1174.jpg",
+      "sha256": "f2a8bb1ecbdef7a8efd34bde4c013ee701c7ab1b00c905914194e327b6d7d337",
+      "labels": [
+        "1 0.616969 0.139930 0.133344 0.148141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image211.jpeg",
+      "sha256": "4a02d16da7da2c58f5718cb265649b28fea17fe8cde96a97d072e0f9cd96fac3",
+      "labels": [
+        "0 0.607195 0.208781 0.365078 0.284125"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image206.jpg",
+      "sha256": "36f1d00a1ec522847252c8a7420cc97ea7d03aac57522c5c2595adeaad9a471b",
+      "labels": [
+        "0 0.865938 0.225438 0.158750 0.155562",
+        "0 0.719891 0.220680 0.139688 0.120641",
+        "0 0.471477 0.150844 0.128578 0.161906",
+        "0 0.337352 0.105602 0.133328 0.074609"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image817.jpg",
+      "sha256": "e60e12d6faa0c75504b81625569c7e2a7d0a0040fcce01a642c550a1e17bf68c",
+      "labels": [
+        "0 0.713203 0.123375 0.158219 0.099344"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1020.jpg",
+      "sha256": "fb352313cf96b536509ea8e2de1652cf59830c2ea0c6c476a79d624126d9bafa",
+      "labels": [
+        "0 0.464180 0.175328 0.192641 0.091125"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image33.jpg",
+      "sha256": "63a86f919d30d4c2cd591181b14b22cf70e96a4cf28143e4fcaf0fc1647e0ba1",
+      "labels": [
+        "0 0.573805 0.150758 0.090516 0.104734"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1104.jpg",
+      "sha256": "bba63872933eb5d97c77cec961603680ed653b909bf10ae125db103f51753e9f",
+      "labels": [
+        "0 0.609320 0.149367 0.233766 0.095234"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image426.jpg",
+      "sha256": "e6f31246c4492626436509951e448b84043eff820965f6abed66c8d5a9d44fd8",
+      "labels": [
+        "0 0.459211 0.080281 0.247016 0.131937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image766.jpeg",
+      "sha256": "0f0bac3baa093b261158980bdf5e09819f6a0a04c461ed3639e41f1c826422cb",
+      "labels": [
+        "0 0.481492 0.307219 0.100828 0.078187"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image635.jpg",
+      "sha256": "e07acc401880158196dcbab4f673738b9098d8b400cb142bd02cb8bd65bf8b2c",
+      "labels": [
+        "0 0.647109 0.261305 0.172844 0.164609"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image372.jpg",
+      "sha256": "c4900593a8d3fd24d902c555676624747122f0fe1aea87f6438cf168424182d9",
+      "labels": [
+        "0 0.161203 0.170234 0.113844 0.079125"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image13.jpeg",
+      "sha256": "9459c36ca17fadd3e93078833c3cd230a3903231c4ff8d418e52b2d45dac6f55",
+      "labels": [
+        "0 0.347297 0.335500 0.049781 0.056062"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image30.jpeg",
+      "sha256": "dbb5c5eb5d42eadaeebf79c39cb622d89551fd8ae351a86b5236a40d1380e396",
+      "labels": [
+        "0 0.318234 0.334109 0.138094 0.192063"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image119.jpg",
+      "sha256": "f15941ab559a38a9d89af3a2a0032ba14e4860cea6da3377e75eeac89fe5a746",
+      "labels": [
+        "0 0.509750 0.406938 0.082250 0.090906",
+        "0 0.384211 0.311695 0.086578 0.069266",
+        "0 0.256508 0.317109 0.103891 0.088750"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image574.jpg",
+      "sha256": "cdd998822c9658e9ab993b409f10264aa3b40607580051a37607dcc8c845f56a",
+      "labels": [
+        "0 0.419766 0.117281 0.191344 0.086375"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image813.jpg",
+      "sha256": "45fe88b557c7c6f38f77eded84185b0c9ae188affe35ea330b48cc0856c617e0",
+      "labels": [
+        "0 0.602852 0.153680 0.434922 0.203672"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image139.jpg",
+      "sha256": "e1846a3905028f2b305cd42cdd8a6c9922a3eb78bc3f33bf59129e1efaee1776",
+      "labels": [
+        "0 0.571430 0.412227 0.172953 0.140703"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image403.jpg",
+      "sha256": "ec2139add760f555e0f1fb910c753df994237d457924279897895f858b9f12d7",
+      "labels": [
+        "0 0.546727 0.095312 0.227797 0.109063"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image581.jpg",
+      "sha256": "e951a3da3fc0dab8cf143c54ea993eb5c4d1f2bebbfb1f4ce5cd78051e24e9c4",
+      "labels": [
+        "0 0.581289 0.078617 0.251016 0.125516"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1142.jpg",
+      "sha256": "d2ae0800fbf2adbea789005429351591f257f188f74e883f984d394cfc7084f4",
+      "labels": [
+        "1 0.518734 0.171820 0.386844 0.279828"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image797.jpg",
+      "sha256": "10ec9d6411a7503b03fc0b36ace3b018a04476dfc488c74a192accfcdcf20fd6",
+      "labels": [
+        "0 0.687227 0.207789 0.201078 0.233547",
+        "0 0.341992 0.149352 0.216234 0.220984"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image440.jpg",
+      "sha256": "8c1e3a8bcf9b830553bc867980436e6e18dab28dba539e2391748b129fa409ff",
+      "labels": [
+        "0 0.588070 0.070727 0.085203 0.119891"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1245.jpg",
+      "sha256": "361c6441146b2d2b71151df2bee0dde2c77588f065287e5c909ff7a360ae8fb5",
+      "labels": [
+        "1 0.574781 0.075758 0.253250 0.125328"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image273.jpg",
+      "sha256": "90c85216a8c019dca1a013f5449ca87b310a3b3596bd1a2bd2fcf681002ec2ce",
+      "labels": [
+        "0 0.622203 0.052359 0.295250 0.098406"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image873.jpeg",
+      "sha256": "d22380fa8adf2d20ae88a81ab89b50d057bcedd3031b2316412de6e6b4783ee6",
+      "labels": [
+        "0 0.316023 0.139937 0.233984 0.268406"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1179.jpg",
+      "sha256": "adb0cb87cced312604df7d1dfecced9ef4023c9b1f0e96094eb83783fa990a07",
+      "labels": [
+        "1 0.456477 0.259680 0.128391 0.106172",
+        "1 0.752773 0.249805 0.113578 0.116047"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1325.jpg",
+      "sha256": "7e6fc9c1f188d90aaee1c93e63a99a6233131cdde1ce66f76cc1844bd570b2d3",
+      "labels": [
+        "1 0.639664 0.295219 0.180953 0.076187"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image870.jpg",
+      "sha256": "fd776830705400170c9bf5645ce7cdde652b0d4826a26841140ac33eb3b1e4f3",
+      "labels": [
+        "0 0.454547 0.141016 0.208000 0.114719"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image153.jpg",
+      "sha256": "464149c9fe7d7cbfc3b82d29a28166d21784e425fe7e5f994e3ce2a9fedfdde6",
+      "labels": [
+        "0 0.598594 0.135281 0.097406 0.101938"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image134.jpg",
+      "sha256": "efed7bc5a74fab15706cbdca6af5339b91712e1fcd9fae2b764573d3d75aa804",
+      "labels": [
+        "0 0.259734 0.485930 0.156062 0.106266",
+        "0 0.674352 0.383227 0.183984 0.142859",
+        "0 0.428570 0.425328 0.156047 0.132250"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1326.jpg",
+      "sha256": "a6178caf0de0edce6f9f31a19e1d2827a3765832fc2a9d6ced33c48628ee741b",
+      "labels": [
+        "1 0.768250 0.206352 0.115875 0.034922",
+        "1 0.534922 0.207930 0.115875 0.034922",
+        "1 0.273789 0.179352 0.115859 0.034922"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1038.jpg",
+      "sha256": "b9a1ac94bcd69aace085e7cbc11e1e63a2d1b69a21face415a05dc12733764ca",
+      "labels": [
+        "0 0.549781 0.134203 0.164281 0.121000"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image822.jpg",
+      "sha256": "59926417f40d471b791810242a0347186838345f1333b78ed38feb0fa876a655",
+      "labels": [
+        "0 0.666664 0.100648 0.190703 0.106266"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image575.jpg",
+      "sha256": "3d20bef69b159b28baf9b8ccc5b829835c5ec2745b9faabb45d3fef87b375ee7",
+      "labels": [
+        "0 0.599812 0.201656 0.197531 0.300406"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1345.jpg",
+      "sha256": "5f80c5f05f8fd439e92656eb792a35bda00637adb882d43174df50a06698ea93",
+      "labels": [
+        "1 0.679344 0.296016 0.212687 0.138094"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image466.jpg",
+      "sha256": "9e5b6a073647ee3b3c2602fe3db2bf707d4333ae46442aaae05071dd51e6d8ba",
+      "labels": [
+        "0 0.588727 0.452047 0.079109 0.075594",
+        "0 0.725414 0.803977 0.079109 0.047953",
+        "0 0.826734 0.759578 0.065906 0.064781",
+        "0 0.515539 0.351898 0.079109 0.099547"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image472.jpg",
+      "sha256": "153bf5ed9b00a730b2edbc0e1ba7d00913301ef3148d5e4c7ba1074b144e768b",
+      "labels": [
+        "0 0.316562 0.245063 0.123750 0.103625"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image465.jpg",
+      "sha256": "3d8a3801fc35a758bf2065792ff2266120c818a84eabacb55198a2565ffd6712",
+      "labels": [
+        "0 0.532375 0.293766 0.044406 0.029906",
+        "0 0.484406 0.226617 0.044406 0.029922",
+        "0 0.408883 0.267383 0.044422 0.051484",
+        "0 0.598891 0.279938 0.035969 0.045437",
+        "0 0.663664 0.246984 0.040797 0.046656",
+        "0 0.794359 0.210430 0.044406 0.029922"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image717.jpeg",
+      "sha256": "b0cd24412962be9e77a26379b3c3608fad1665b51c5d7f50c5fd09a2c2f57a33",
+      "labels": [
+        "0 0.486633 0.438281 0.139922 0.144031"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image672.jpg",
+      "sha256": "86411ff0197912896f3a60600efe60a95b585ffbcb20fcab3385760239b5397c",
+      "labels": [
+        "0 0.595688 0.269555 0.197531 0.123453",
+        "0 0.403305 0.350836 0.137859 0.109047",
+        "0 0.328203 0.447539 0.102875 0.084359",
+        "0 0.234578 0.425938 0.088469 0.090531",
+        "0 0.718117 0.371414 0.100828 0.096703",
+        "0 0.966062 0.377586 0.065844 0.100828",
+        "0 0.921828 0.412563 0.067906 0.047313",
+        "0 0.894047 0.468125 0.069969 0.059687",
+        "0 0.790141 0.459883 0.067906 0.072016"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1364.jpg",
+      "sha256": "1c935d40f11450ab87bd3754570fd4e3af5dea38e30e9c0abf5b0afe3ecf8530",
+      "labels": [
+        "1 0.490461 0.144430 0.266672 0.111109"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image990.jpg",
+      "sha256": "5fdc90e04d2bae047579a740e59fd1ced7745189ae7de535230bfd880e7d292a",
+      "labels": [
+        "0 0.548508 0.235617 0.164234 0.109047"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image689.jpg",
+      "sha256": "30febf2373263289996291fd51ce1ae0d5bf22117ef0d06c3aa45c2ccb87726e",
+      "labels": [
+        "0 0.525734 0.257211 0.300406 0.160484"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image617.jpg",
+      "sha256": "dfed36fe6b13269233ff5d86827aea6adfc1c7c35e25a4ac3731aa3e0bcebd40",
+      "labels": [
+        "0 0.487641 0.109656 0.277781 0.172844"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image245.jpg",
+      "sha256": "7e8ba2c2066f7d8782cf8f533533cb1ce647f93c9ff307b5b19210ff5f150a45",
+      "labels": [
+        "0 0.698477 0.074672 0.179391 0.060344"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image326.jpg",
+      "sha256": "2428635f10cf809de015d41f3b874aa82472af43b490c2fdbea874f3752e0247",
+      "labels": [
+        "0 0.329344 0.165063 0.109531 0.092062"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1366.jpg",
+      "sha256": "56fd815e10ea60e82d9a9ce31f42c70429590c9fb426f05d859ddd3dc4410368",
+      "labels": [
+        "1 0.541914 0.267063 0.190484 0.110469"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image79.jpg",
+      "sha256": "96e3b7befe19aab580afeea3c780d4626264e5db361d0ce145cead95968c585e",
+      "labels": [
+        "0 0.451305 0.166773 0.119266 0.142859"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1381.jpg",
+      "sha256": "79f3519b71e8ec8a86a32756b941145d0212c903cf21c2403bb0e201ce2ff205",
+      "labels": [
+        "1 0.405117 0.242398 0.175297 0.128391"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image726.jpeg",
+      "sha256": "708cf9fc1c07b5d9e0e2cdfaaa3cc2df113476e508de67e5b78dfa56cb1f58c3",
+      "labels": [
+        "0 0.290148 0.332297 0.084391 0.076156",
+        "0 0.709883 0.277789 0.084359 0.061734",
+        "0 0.365234 0.271617 0.078187 0.061734"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image201.jpg",
+      "sha256": "2a55cd9eb6889548f74dba9ec09cebc38c0cd8c988e7b2b096216d857d4650e9",
+      "labels": [
+        "0 0.074219 0.191320 0.148438 0.188891",
+        "0 0.640523 0.111133 0.257141 0.222266",
+        "0 0.344523 0.071086 0.225391 0.132203"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image179.jpg",
+      "sha256": "5b7decce16a5138383d46aa1b2c2407aa1c9a3f5403e7c6902a5094578763f3d",
+      "labels": [
+        "0 0.493617 0.085687 0.303328 0.168406"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1004.jpg",
+      "sha256": "292b40524edcb6ea55d02265464a31f9b40f96e915947bc25b35b66458bc1ee8",
+      "labels": [
+        "0 0.410383 0.196344 0.099203 0.045094"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image572.jpg",
+      "sha256": "c5e67102b81b3ed237cb348681efd6dae5354cc9afded68af93f9a87d5a577ce",
+      "labels": [
+        "0 0.796312 0.317914 0.211938 0.248984"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image155.jpeg",
+      "sha256": "5620b608fe8ef9a0e71a3ed38d6ad1c031ff5fc78e3f3e79903644a4d7b84b38",
+      "labels": [
+        "0 0.744586 0.422406 0.077703 0.058438",
+        "0 0.476187 0.449461 0.112781 0.069266"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1305.jpg",
+      "sha256": "2b63bd4abc166aa2a96c050ef7181eb37669c3c952d9405321cb152d138e1d59",
+      "labels": [
+        "1 0.676203 0.177641 0.185938 0.098312"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image248.jpg",
+      "sha256": "d83425b0da6a50c92a8070c63f90ceb63a8167804b397772c35978c366e901a7",
+      "labels": [
+        "0 0.573469 0.270359 0.096188 0.033844"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image568.jpg",
+      "sha256": "6639d8bd0a80bda0767822a7cb13c1ff7378eff83caa212fa466c570003b8f27",
+      "labels": [
+        "0 0.219148 0.130703 0.230453 0.142031"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image148.jpg",
+      "sha256": "57e074e27a12be20fedccbc542b8dfa140eb56205f159bd20a9ebbc6888ec043",
+      "labels": [
+        "0 0.510820 0.341992 0.147391 0.125328",
+        "0 0.402602 0.334305 0.233984 0.149359",
+        "0 0.547516 0.309633 0.099562 0.095234",
+        "0 0.179766 0.300867 0.147187 0.116672"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image957.jpg",
+      "sha256": "7474dd849b5ff01758edf1a88abe92a2ffafc78edb51e1019029cd7d4f6b6491",
+      "labels": [
+        "0 0.480398 0.148992 0.122016 0.064547"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image183.jpg",
+      "sha256": "2062f10116538c00640bffdc1206c60b4e9e76416f4cf42e2e33c7aa216abbba",
+      "labels": [
+        "0 0.433383 0.157195 0.290484 0.142859"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image339.jpg",
+      "sha256": "cf3e3797abfa15373a4af6b53582d0122da28a69bbd35f2bdf38f573005b134f",
+      "labels": [
+        "0 0.378523 0.068234 0.172953 0.123813"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image258.jpg",
+      "sha256": "59a49bdc8717b62549ccff97364f2b93029665e7d7d2d63477f5243360f82c68",
+      "labels": [
+        "0 0.611883 0.215062 0.198422 0.109531"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image298.jpg",
+      "sha256": "cdad27a05541b3fd596d1dffb33f121aef3d0bbc4831d73c0752ac999b7d958f",
+      "labels": [
+        "0 0.521406 0.041258 0.185719 0.082516"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image283.jpg",
+      "sha256": "938b252d7212c4d17280fb1b10f7d017d4f47bd3b873038946cc322f0ddf375a",
+      "labels": [
+        "0 0.315852 0.094422 0.234922 0.106344"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image83.jpg",
+      "sha256": "7b84a013c515e5f01cc44c4903f0b6090390fd79b0a05b6d9673e0c20eaf0ea6",
+      "labels": [
+        "0 0.413242 0.697328 0.117234 0.120844"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image413.jpg",
+      "sha256": "e389df68e977bcf676436b723672c05d11459dc8ca407cfe5f407d3e94982d39",
+      "labels": [
+        "0 0.365055 0.095320 0.200203 0.130641"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image659.jpg",
+      "sha256": "83460fb7cd4fa7de6350563c20a01ba39b0033485d08b3943e98d9125c0f78af",
+      "labels": [
+        "0 0.864211 0.176969 0.059672 0.069969",
+        "0 0.218117 0.559680 0.072016 0.111109",
+        "0 0.191367 0.502070 0.047328 0.061734",
+        "0 0.260305 0.180055 0.045266 0.051453",
+        "0 0.309680 0.196508 0.049391 0.059672",
+        "0 0.475320 0.183141 0.059672 0.057625",
+        "0 0.522648 0.527789 0.055547 0.051453"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1013.jpg",
+      "sha256": "6ae65c8187e9e2c6a15aca878a148edecdb95042fe16eb5a45c59a551ae8b236",
+      "labels": [
+        "0 0.512875 0.200117 0.140437 0.068203"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image642.jpeg",
+      "sha256": "0cf4ebebd52843a60423933946dc572bff1cfc8a8634ac48cbdd2d73b918f0b2",
+      "labels": [
+        "0 0.497953 0.408445 0.034969 0.043203"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1411.jpg",
+      "sha256": "b48e1d2069e3a6208f14d93bfe7903d71a4450a45541f5a2985a4c63e342917a",
+      "labels": [
+        "1 0.302484 0.245891 0.127562 0.078187"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1092.jpg",
+      "sha256": "65eecb794cf521d82785b986a13c674c725b9c13a9f03d5a4b92c915dc78ac68",
+      "labels": [
+        "0 0.510836 0.098492 0.279234 0.119047"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image840.jpeg",
+      "sha256": "0ad235e72149877fd77109a2274fdf21a918daadd7f0a9b3e3398c6d9e9ed608",
+      "labels": [
+        "0 0.495312 0.358227 0.101000 0.142484"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image637.jpg",
+      "sha256": "197bd9c187690a3dbb0ccf3c2637934bbe373ea5561414fd76ec795e101261cb",
+      "labels": [
+        "0 0.906367 0.635789 0.057609 0.074078",
+        "0 0.838469 0.710898 0.053500 0.059672",
+        "0 0.612125 0.458836 0.078187 0.057609",
+        "0 0.525703 0.385789 0.082313 0.129641",
+        "0 0.267477 0.085375 0.125516 0.080250"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image18.jpeg",
+      "sha256": "d1b7bdd859946e613783a2191f8a02ffa074ae95eb13a2a433c92d0ada0a5bab",
+      "labels": [
+        "0 0.531008 0.481797 0.073016 0.058719",
+        "0 0.616719 0.515922 0.079375 0.060313"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1138.jpg",
+      "sha256": "c0241b256891b1352f30ba736b0f8b7095b236397371c267229ef3a622c7cdeb",
+      "labels": [
+        "1 0.393023 0.248320 0.093828 0.088891",
+        "1 0.676961 0.226102 0.088891 0.103703"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1061.jpg",
+      "sha256": "1e8287642e95df1debb635cf907083c0def012561130f39e367721f7a1d0a8a0",
+      "labels": [
+        "0 0.464500 0.136117 0.186469 0.080859"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image950.jpeg",
+      "sha256": "acc7651830f5dab3a352503bd10a85759309d966acdd0f7f1d3dacccccfb0023",
+      "labels": [
+        "0 0.455789 0.380836 0.123422 0.093641",
+        "0 0.618031 0.413375 0.123438 0.093625"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1071.jpg",
+      "sha256": "87b01c73f07fc0458f92f6f43b9aee6cc69864ca666e930d62903044d98d9b34",
+      "labels": [
+        "0 0.518953 0.089086 0.229375 0.112203"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image673.jpg",
+      "sha256": "6c21b127265efe386aa83afb71e84e65f7af7d9a1ac932597bafdb9d38b75d75",
+      "labels": [
+        "0 0.362156 0.179023 0.141969 0.090547"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image854.jpg",
+      "sha256": "c1d72fe3d896a3e983833adca731c6142f1a7561adca2407df39fdeeae84b21e",
+      "labels": [
+        "0 0.399352 0.173164 0.171203 0.078141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image408.jpg",
+      "sha256": "a2b20a3cb7885251cd8f7b44c677748982b2a16561e97e9d37686de56feda47c",
+      "labels": [
+        "0 0.556344 0.117461 0.107938 0.098359"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1224.jpg",
+      "sha256": "cd6df82a2549d1ca8c197173f11b717f09290c3a3ce68d22fa245858b575e527",
+      "labels": [
+        "1 0.462125 0.429656 0.379000 0.452594"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image218.jpg",
+      "sha256": "4f673261ffdbac3f9f094df7a21db8e4d47f56ee85f764e0fc87d89f9479d980",
+      "labels": [
+        "0 0.354055 0.195258 0.163422 0.111047"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1295.jpg",
+      "sha256": "aa09018d77d2824d84179a1a2151200fb3f21d581a3612546248acebd01c677e",
+      "labels": [
+        "1 0.572813 0.215320 0.305094 0.107078"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1400.jpg",
+      "sha256": "2557ad56b4671b5c09d0c4731fab224b296eb0786a889433e8c109225fbfde7e",
+      "labels": [
+        "1 0.641984 0.389930 0.119344 0.102891"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image757.jpg",
+      "sha256": "00af9a1a7fa45675cbb602835f0e75ebb179dfbaca1c159af8d4a4171ff53596",
+      "labels": [
+        "0 0.691367 0.899492 0.286016 0.201016",
+        "0 0.520586 0.291781 0.269547 0.174906"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image311.jpg",
+      "sha256": "7e9a077121f48dbe269e62ef3544d83a2aa4c6b8fa87f8e45c32965053e5c96c",
+      "labels": [
+        "0 0.316648 0.226961 0.096828 0.180953"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image54.jpg",
+      "sha256": "0c88bd96c0a224a8c3798ec9c0fb862ecebedb54ee4e94f2e03bd9d154fcf82f",
+      "labels": [
+        "0 0.496922 0.167711 0.107000 0.150203"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image725.jpg",
+      "sha256": "7ca7445d6fb3f21e8f8834686c54244d07eaa25e8beb90549da8d26a5ef0c17e",
+      "labels": [
+        "0 0.326148 0.178000 0.086422 0.092594"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1395.jpg",
+      "sha256": "45b7fa6ebd80208aaafb5590bfef717cc729eaa0c7f081a2ff8d8f101f1556e3",
+      "labels": [
+        "1 0.341570 0.380672 0.139922 0.158437",
+        "1 0.536023 0.323055 0.100828 0.100828"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image194.jpg",
+      "sha256": "0f5e6618bed87130ee37787b59bc88de4616ae0fba9247f4ee8514ef2b077cfb",
+      "labels": [
+        "0 0.541305 0.109539 0.255516 0.123734"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1319.jpg",
+      "sha256": "97e47bd8194fa035650b3e26ef02c4267c6465140e836afb741218c9de496716",
+      "labels": [
+        "1 0.255531 0.308711 0.092062 0.071422",
+        "1 0.436508 0.296820 0.092078 0.071422",
+        "1 0.553969 0.242859 0.092063 0.071438",
+        "1 0.760312 0.217461 0.092062 0.071422",
+        "1 0.309531 0.217461 0.092063 0.071422"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image314.jpg",
+      "sha256": "d042f44b26a9a565a30438ceb84214e697007242d4b584d8c60ce1ae90792387",
+      "labels": [
+        "0 0.662687 0.096016 0.134938 0.179375"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image424.jpg",
+      "sha256": "0ee8f9edf3ce31b57b683a83caf68ac0ebd4e25919bccd64154931045d31fb27",
+      "labels": [
+        "0 0.387867 0.151680 0.260203 0.147422"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1118.jpg",
+      "sha256": "ecb5e1af6cd3cfa209e28e5674a3a1d0b8c8969f1f7b6e8383374663ec8e709c",
+      "labels": [
+        "1 0.336430 0.238695 0.415641 0.135797",
+        "1 0.680055 0.233555 0.337453 0.121391"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image529.jpg",
+      "sha256": "22ef360922c2f18d712a2bcbda77088ace94e3f0e52a51a9cd9097bc3ac47f38",
+      "labels": [
+        "0 0.327281 0.191844 0.139500 0.138187"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1140.jpg",
+      "sha256": "5c1ec9c086bcf15991bc2a609505dee335400fe09b18001f9bb4fa4094b15272",
+      "labels": [
+        "0 0.553469 0.248281 0.123375 0.079062"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image3.jpeg",
+      "sha256": "6b3b30b75a9293ef09ce794d4404807e39a54483632f131787d60b4d2159d296",
+      "labels": [
+        "0 0.534898 0.297602 0.098422 0.065078"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1383.jpg",
+      "sha256": "6e8d98ed84e8f6e280b1036d4328f75236faf7e5d93e187ab40a87cd94396e8d",
+      "labels": [
+        "1 0.482891 0.370797 0.256781 0.241969"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image768.jpg",
+      "sha256": "2257ae1b085ac2d6c7706c5bc86afe07190598ac3b8ed32d27d72d5d5bcc6d62",
+      "labels": [
+        "0 0.573055 0.230055 0.168734 0.067891"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image850.jpg",
+      "sha256": "846ffc71131c623d411997a82750ef84b5c2b091395333da1e764e912871f741",
+      "labels": [
+        "0 0.487008 0.169914 0.143078 0.084203"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image893.jpg",
+      "sha256": "5f716a582049290c06f109cc9add9bdcc0a3da6d0f3d74b30b4355f3636500f9",
+      "labels": [
+        "0 0.534633 0.139609 0.190266 0.079875"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image335.jpg",
+      "sha256": "40984434446f936162f5a0ec5f5ff3b5765c201f912ef2f959c0d9364ca2eb7f",
+      "labels": [
+        "0 0.319008 0.263461 0.130203 0.098391"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image899.jpg",
+      "sha256": "51b8573b53d0d3c45b5eadcecd168f3860d0e142ed8904710008bfe2c41dbfc8",
+      "labels": [
+        "0 0.447219 0.125273 0.134312 0.065953"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image51.jpeg",
+      "sha256": "58885fcad76056e9e6012de0c9a99e47c084e5497fe1d35a2a7d2de8992ea679",
+      "labels": [
+        "0 0.564492 0.387516 0.088203 0.062844"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1075.jpg",
+      "sha256": "e5a0461f9b89f9eae8bed15c8e3e932d703bcd6677fec91963a516dcb6092b14",
+      "labels": [
+        "0 0.503281 0.088266 0.214531 0.100656"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image467.jpg",
+      "sha256": "6b3e1857fcbb22cde38b55ed27510b4fb6fc40b25565df09cb40bf2af2b25e95",
+      "labels": [
+        "0 0.325523 0.191805 0.149891 0.151109",
+        "0 0.724812 0.220016 0.160687 0.169094"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image940.jpg",
+      "sha256": "f14df74d97ffb078a3f36ec45ba93c01302a91c2926aee3afba0495af0ce0d32",
+      "labels": [
+        "0 0.731992 0.525602 0.047547 0.038359",
+        "0 0.647383 0.527328 0.047547 0.038375",
+        "0 0.561055 0.541141 0.047547 0.038375",
+        "0 0.397023 0.542867 0.047547 0.038359",
+        "0 0.317602 0.568766 0.047547 0.038375",
+        "0 0.234820 0.544812 0.047547 0.038375"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image260.jpg",
+      "sha256": "9b06397f019d7a0efe2543ddb66462d3927990531023addedbfceee68bac7973",
+      "labels": [
+        "0 0.441242 0.157922 0.111109 0.077781"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1267.jpg",
+      "sha256": "1fc1837f3acb4e27163f7f0ffa432cc29bcc0c514fbcda0dc6c49a255d23273d",
+      "labels": [
+        "1 0.683875 0.199133 0.164500 0.138734"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image370.jpg",
+      "sha256": "6fb31426d12f3227dbc23687b4e1760b9bf1c46e94d8720cd178a69c1e23ffc7",
+      "labels": [
+        "0 0.709805 0.207406 0.134297 0.079125"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1054.jpg",
+      "sha256": "12b3c011d64641600ba35d66148622f0d71af2c5d43d6929587d469aec310ff1",
+      "labels": [
+        "0 0.458766 0.136359 0.181813 0.090688"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image863.jpg",
+      "sha256": "ab381b82ca79c3eba82aa9abc95dc61789282193e210a736dbf8441b637da24a",
+      "labels": [
+        "0 0.487016 0.144047 0.173375 0.088750"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image886.jpeg",
+      "sha256": "2a34dc95abf186b79b15e31d4c02123a12f3da6021fd6425df1028b02145f0fb",
+      "labels": [
+        "0 0.642852 0.235930 0.298922 0.138734",
+        "0 0.206602 0.297727 0.292203 0.240266"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1198.jpg",
+      "sha256": "008b75dccdd2da6acc748e37124fce92645cefb767eb1530349ba36a889fb39c",
+      "labels": [
+        "1 0.316016 0.277062 0.225313 0.311906",
+        "1 0.566016 0.390586 0.188094 0.266234"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1261.jpg",
+      "sha256": "8c1f404d26706e10f01e675d0266f9e09718b3f200142ab7e8234435eb452722",
+      "labels": [
+        "1 0.334414 0.312773 0.118828 0.088953",
+        "1 0.740258 0.213203 0.130078 0.088531"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1302.jpg",
+      "sha256": "e2e664d88b9d452b4a42b4a075eb598fa18897f2f27fc48bf66ade7e2b29c5fe",
+      "labels": [
+        "1 0.279281 0.351133 0.114094 0.063266",
+        "1 0.702531 0.286375 0.114094 0.063250"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image292.jpg",
+      "sha256": "6a96a6d9c6446b6886a215cab27d8c2f30a69d56e26143e4380a7c7ac364d8fb",
+      "labels": [
+        "0 0.641250 0.061875 0.200000 0.123750"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1080.jpg",
+      "sha256": "5f7330ca8405199ec6ff4119a1e946ca8b5b5bdcb684d012af3c289e5d7b7ad9",
+      "labels": [
+        "0 0.496680 0.081664 0.244234 0.123766"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image647.jpg",
+      "sha256": "f4a1ffdd6b4c62ffd642e21b5d2fc93dcc760db74a8d85f3a22933eaeeb15bd3",
+      "labels": [
+        "0 0.743836 0.349805 0.152266 0.176953",
+        "0 0.410508 0.242805 0.168734 0.176953"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1339.jpg",
+      "sha256": "131dd64d393fccc114af15abadbd249c92b96940b0442fa480f4b4ee21e776be",
+      "labels": [
+        "1 0.252359 0.253945 0.114281 0.057141",
+        "1 0.724641 0.219055 0.141344 0.057141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image327.jpeg",
+      "sha256": "103b4fd13c0de0aea859abd8be2b8d028bb85a3d4c1c8144d51ec72b6fa7b04d",
+      "labels": [
+        "0 0.490258 0.217430 0.097609 0.054109"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image881.jpg",
+      "sha256": "109dfcc0e5ab3fc151eb9f9669e2e0232ee083309fc01cab2582ea61011e7941",
+      "labels": [
+        "0 0.522727 0.136367 0.231391 0.116672"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1349.jpg",
+      "sha256": "68f28a956c3fed2208f043ed31341c88b79a44534a38b487b22fd1d183cfaf25",
+      "labels": [
+        "1 0.522203 0.253156 0.196812 0.100000"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1119.jpg",
+      "sha256": "f34c2a446ca5cf5e1909f3be01602bfd5a807a5316f7bd563b809643a31ddf1e",
+      "labels": [
+        "1 0.577172 0.183141 0.275719 0.201656"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image443.jpg",
+      "sha256": "51ea99ca3481ba34bd733c068bc80e37ce8cf9fab6b7345063b6cc3527240851",
+      "labels": [
+        "0 0.570125 0.111477 0.087562 0.079141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1300.jpg",
+      "sha256": "24e7eb74d5a707c2981c271478a69f6015cd696549b79082d2141d46a3228eab",
+      "labels": [
+        "1 0.474680 0.090016 0.245516 0.098312"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image832.jpg",
+      "sha256": "e8c77c10b5d65742cc45341d751cedf30f85ac24b7e14789414fda6f3ada4d2b",
+      "labels": [
+        "0 0.674695 0.102094 0.196797 0.070344"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image712.jpg",
+      "sha256": "d77dc2195a33bee5e7c87492df113b8cc3017425804208f4162ea453de50d4b6",
+      "labels": [
+        "0 0.342609 0.184164 0.102875 0.096703"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image78.jpg",
+      "sha256": "79a038b4595bcdfcdd70281595154c2a15d9c9dcf3ec28d722cb22cfcb8563f5",
+      "labels": [
+        "0 0.507570 0.138531 0.101953 0.121000",
+        "0 0.503094 0.135406 0.107000 0.104937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image275.jpg",
+      "sha256": "968dbf764e6bc52c21d099fd85a2bd252a1672ac1ba5db3dad5d93cef816145d",
+      "labels": [
+        "0 0.736484 0.121445 0.276187 0.169922"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image499.jpg",
+      "sha256": "bad1fb64d977857b2f80b5f0bbe4cdc598c536ae0efac93f3420b1c1c68a25c7",
+      "labels": [
+        "0 0.357531 0.109789 0.128063 0.063328"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image197.jpg",
+      "sha256": "a964ecc8f72134e42c24d66a2a9bb71c0beab307dbd8781d79c52da0b48ff644",
+      "labels": [
+        "0 0.331000 0.065922 0.136500 0.090469"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image184.jpg",
+      "sha256": "7792e253b05160ab3b1639678cb050f31f7e0a5fe94c9c7354bb549ed0fcd0c3",
+      "labels": [
+        "0 0.275453 0.316719 0.184125 0.122219",
+        "0 0.708781 0.316711 0.168250 0.103172",
+        "0 0.898461 0.276242 0.201578 0.126984"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1073.jpg",
+      "sha256": "64562b30159a955a2cf3b0c21a4eedd3ee6e8790b829a422e144f9b34d736d6c",
+      "labels": [
+        "0 0.495562 0.090906 0.246750 0.121438"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image931.jpg",
+      "sha256": "350de93c04d61710fecf6ccf1710887d1d97d1fd9d75fb84931f5d9dc8e79187",
+      "labels": [
+        "0 0.753625 0.338523 0.145875 0.074547"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1186.jpg",
+      "sha256": "2d4bc1cbd3271822ac27683fec30367717ee34098b37c5b53ede898fd15f9468",
+      "labels": [
+        "1 0.242602 0.296516 0.139922 0.156375",
+        "1 0.475117 0.204953 0.135797 0.154313",
+        "1 0.715859 0.245078 0.119344 0.156375",
+        "1 0.139727 0.251242 0.115234 0.123453"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image226.jpg",
+      "sha256": "1a63729a41c4a9a2aa3c89741fc7cbe68bc4d5bccd63b321e17f61577cc943f2",
+      "labels": [
+        "0 0.490195 0.456102 0.023016 0.013734",
+        "0 0.316133 0.453539 0.023016 0.015828",
+        "0 0.278688 0.457148 0.023031 0.015828",
+        "0 0.521852 0.444195 0.023016 0.015828",
+        "0 0.697391 0.454273 0.023031 0.015828",
+        "0 0.480125 0.447078 0.023031 0.015813"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image454.jpg",
+      "sha256": "76105b62536052cbe6c2666b9b1030f7fb5c98d64c85c66ca211e985ac719c53",
+      "labels": [
+        "0 0.544922 0.085062 0.142656 0.155812"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image267.jpg",
+      "sha256": "9d982d46df92db4076ef0dbbf5128c4a686c8defb72275f648dbeb1b39f5ec10",
+      "labels": [
+        "0 0.518281 0.084891 0.220625 0.074594"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image406.jpg",
+      "sha256": "38f1950a6bf786f911e0165d9f3f4cbd70ccce755cec4f135eb6781490bb5cc7",
+      "labels": [
+        "0 0.470602 0.062320 0.214641 0.122234"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1409.jpg",
+      "sha256": "3de93825a7fc9145cc9c56fcaeacf1494c93052c559c5817df5fe78ba34fe7ce",
+      "labels": [
+        "1 0.435195 0.378609 0.133734 0.117281"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1170.jpg",
+      "sha256": "b8cb894e0a4a65fff37ee1c1bf9cb0527dc94e1f2b2b48a83f097b1b3d355de9",
+      "labels": [
+        "1 0.482406 0.247344 0.204937 0.180250"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image157.jpeg",
+      "sha256": "a22cb397950c0552be98c37248dde2788e6572c7e08d42fea5395d6c6aa4953e",
+      "labels": [
+        "0 0.362445 0.562016 0.049797 0.073594",
+        "0 0.475109 0.544375 0.053906 0.050000"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image351.jpg",
+      "sha256": "a9fd3bbb5c4959ff5b5c4662c3319a419aa1133a975ceeeb10548bc8b26a57bf",
+      "labels": [
+        "0 0.638883 0.165719 0.166547 0.080750"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1337.jpg",
+      "sha256": "0d0626cf23968c27347ce3352964e60cfa20b9d985a5a2cbdc66b9ae166601e9",
+      "labels": [
+        "1 0.484109 0.148391 0.076187 0.039688"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1084.jpg",
+      "sha256": "2565e015fc17ba46b038e589d856d508e9e1fd0bd339d82dc12ca20a3333333e",
+      "labels": [
+        "0 0.498328 0.098984 0.277219 0.108906"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image433.jpg",
+      "sha256": "a33787ff144dd264251a99b5616591232ab3cc499e52b7da0fd27f7979f3997c",
+      "labels": [
+        "0 0.372859 0.092312 0.196656 0.153500"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1135.jpg",
+      "sha256": "cc7d442a563f1759792ffc420029e0ac621d47fcb4452b7f3a76b5a8ca098926",
+      "labels": [
+        "1 0.538695 0.266844 0.172828 0.135813"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image170.jpg",
+      "sha256": "732e67a844c449c0e4d4371f37e5da833e07fc3d57b1850f042cd6ee9119e25b",
+      "labels": [
+        "0 0.593078 0.301945 0.303250 0.149578"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image417.jpg",
+      "sha256": "729c805f4271b58d51a72a5529146b55e0c3b732316b84770c69e7bbae5f3518",
+      "labels": [
+        "0 0.626437 0.079727 0.279312 0.149922"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image960.jpg",
+      "sha256": "be88cbaa32e1cbfdcebdf2ed5bd99f407f44b168f706df745ad5f33eb43488ca",
+      "labels": [
+        "0 0.481359 0.151656 0.106656 0.053937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image49.jpg",
+      "sha256": "17d99c985d321074b742602d18c471d08e22b98e39e2fe9a13bc00897f30ab43",
+      "labels": [
+        "0 0.679859 0.142914 0.107844 0.126672"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1236.jpg",
+      "sha256": "8e05ea776af8dae8ee3bb0695b5234ae21e9cecdbb5c999d6a3f55e9366f052f",
+      "labels": [
+        "1 0.375437 0.288961 0.205625 0.236141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image28.jpeg",
+      "sha256": "df7d5e3ff937989c1d0b03c4001d1fe53c4f32f5d89d0a6a816d6fab5a397482",
+      "labels": [
+        "0 0.460297 0.459500 0.038094 0.030156",
+        "0 0.653953 0.414266 0.053969 0.034906"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1180.jpg",
+      "sha256": "fd2c8874df391a270b784e541e984e7f2cd288e1ec394aab64c5e055ecb373c1",
+      "labels": [
+        "1 0.740430 0.284375 0.271609 0.288875"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image557.jpg",
+      "sha256": "73d020e8894833e7c035b7abd103990dbd745faf1d7bc85fed0eb0fba9431cad",
+      "labels": [
+        "0 0.362148 0.141984 0.376547 0.222219"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1226.jpg",
+      "sha256": "86e2498f41cc49494d9fe5bd3091026114195e072fcce6de61a3eba2cb67dd05",
+      "labels": [
+        "1 0.653789 0.182789 0.242422 0.222953"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1376.jpg",
+      "sha256": "44f694609de30dac10a8418d08732296bbcda8533ab76f8bb82a6d60ff7aefc7",
+      "labels": [
+        "1 0.517461 0.283141 0.271609 0.219750"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1033.jpg",
+      "sha256": "8e612ecd9abe061fb131b634064a164a0fab6c538bfab02e5aa50c354c9fdd1f",
+      "labels": [
+        "0 0.606062 0.086469 0.216656 0.103906"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1412.jpg",
+      "sha256": "b5088d31ea0e9bf36ddb587401329a005c9621ea9f242e91b81c2d65443e5c94",
+      "labels": [
+        "1 0.546305 0.401250 0.154328 0.133750"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image512.jpg",
+      "sha256": "38965dfbffc572b3100ed1fe0804d3b47849f152d089bb66d9fa6fce8fd76850",
+      "labels": [
+        "0 0.511945 0.083898 0.230172 0.079141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image313.jpg",
+      "sha256": "edcc4f28d89b002c9d209dbce7becdbcc81c3c56dda8f9427d531e8bb6f6a5e6",
+      "labels": [
+        "0 0.235687 0.079328 0.166688 0.107906"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image614.jpg",
+      "sha256": "96dae674aa2d12883f0892e7a2c898100f20b5323b72d3bc2408fde4af53fdb2",
+      "labels": [
+        "0 0.504102 0.289695 0.030859 0.043203",
+        "0 0.437227 0.275297 0.032922 0.055563",
+        "0 0.257188 0.211516 0.030875 0.039094",
+        "0 0.379617 0.250602 0.032922 0.043203",
+        "0 0.544227 0.227969 0.041141 0.051438",
+        "0 0.609039 0.261922 0.047328 0.061719"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1416.jpg",
+      "sha256": "7387516ae67c082e9cb6a9d306859b6cc45932f30e1d9aac850cfac2078257e6",
+      "labels": [
+        "1 0.891984 0.402281 0.080250 0.078188",
+        "1 0.643023 0.402273 0.059672 0.074078",
+        "1 0.333344 0.309680 0.172844 0.127578"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image268.jpg",
+      "sha256": "1fce8721a4563043d0a7d248b0fd364e036b0d71d856f1241c26e752b2dcfd0b",
+      "labels": [
+        "0 0.602344 0.115875 0.100000 0.095188"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image663.jpg",
+      "sha256": "7d0b69c7030dd9d7fc9d57d42f5297655b0532c862db99fcd85146ecd8f33cb8",
+      "labels": [
+        "0 0.165648 0.679031 0.041141 0.053500",
+        "0 0.683141 0.323055 0.133750 0.164609"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1201.jpg",
+      "sha256": "ba115677e21c3e8e200e3a71067da7b4363c737dc6d58cf0996951a6435d1443",
+      "labels": [
+        "1 0.455625 0.225430 0.162562 0.158016"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1313.jpg",
+      "sha256": "49ec4d5af8e6c3b9e74f4906fff9130b5682b92c782db5d468ff062b5e033b36",
+      "labels": [
+        "1 0.678555 0.190453 0.166672 0.092062"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1172.jpg",
+      "sha256": "03879aa9b98f4080c9fc6f390815b5a66238ae891fab8c45131516332193da74",
+      "labels": [
+        "1 0.649062 0.154750 0.158031 0.177781",
+        "1 0.393516 0.112773 0.180250 0.153078"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1021.jpg",
+      "sha256": "d50203d428449d130b3b86b4b9e0745ff4f0691d31f1b60eafdc9d50891e9066",
+      "labels": [
+        "0 0.585492 0.113633 0.201078 0.093297"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image820.jpg",
+      "sha256": "ce2ed3cb56e73327f4b894264be4742c07920ba13383c38214d587f15d9aa59e",
+      "labels": [
+        "0 0.721859 0.116773 0.196750 0.103891"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1244.jpg",
+      "sha256": "71257461653cc3354e558619b658d7839b35552610985a5b649bfae0aca44519",
+      "labels": [
+        "0 0.521906 0.178945 0.172844 0.123453"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image383.jpg",
+      "sha256": "f2d96d596b175cece97bed88b7327182c2545baa5ec2dd9b07e2c61cc918b047",
+      "labels": [
+        "0 0.553344 0.079086 0.231438 0.117547"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1255.jpg",
+      "sha256": "001b8018ba919866ec987385b613c85111f5fecf71d108fa64e92cc0d7b06cd0",
+      "labels": [
+        "1 0.456711 0.182906 0.125328 0.114937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1297.jpg",
+      "sha256": "8abbf208c64baccd9f2cb63f58397f60b5bf7620b6dfbc7c88c0ee84aee65aac",
+      "labels": [
+        "1 0.202258 0.249570 0.071859 0.035047",
+        "1 0.457188 0.261836 0.071844 0.035047",
+        "1 0.520281 0.242563 0.071844 0.035062",
+        "1 0.678000 0.244320 0.071844 0.035047",
+        "1 0.763867 0.272352 0.071859 0.035047"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image16.jpeg",
+      "sha256": "37ded053294353da59dfbd6f0bbe43a7a68a18ee5b4ce6297aeca95daa134ca6",
+      "labels": [
+        "0 0.610391 0.315906 0.112344 0.112562",
+        "0 0.564937 0.361469 0.108437 0.090688"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image816.jpg",
+      "sha256": "129cd35635199930372cbfc4ed75d1a7ca930d1a37e330692b2936270a457e07",
+      "labels": [
+        "0 0.768398 0.122297 0.159953 0.093281"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image695.jpg",
+      "sha256": "faf178a01fe5e03d330662ca0afb355e1951801cfba4657460393af8490816d1",
+      "labels": [
+        "0 0.566891 0.115242 0.119344 0.074078"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image189.jpg",
+      "sha256": "587817979d5e4a9df335ce3bd89a8b54d24a04509d1cc3d057998b0ef8c48997",
+      "labels": [
+        "0 0.788937 0.105609 0.242844 0.144437",
+        "0 0.234180 0.106398 0.158734 0.136516"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1141.jpg",
+      "sha256": "e8cf35a7667a66cfc0749d093c1b614f5219ec59779a05068f4ff1a77510a173",
+      "labels": [
+        "1 0.448570 0.460672 0.086422 0.088875",
+        "1 0.806602 0.223633 0.135797 0.098766",
+        "1 0.693023 0.247086 0.096297 0.101234",
+        "1 0.218945 0.406352 0.076547 0.083953",
+        "1 0.085609 0.376719 0.096281 0.074063",
+        "1 0.334992 0.468102 0.071609 0.074016"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image752.jpg",
+      "sha256": "db885fc767098cf9566304e7c5730ca1e49062b7ba96a8a7a67a0a511aea3332",
+      "labels": [
+        "0 0.518531 0.130258 0.355969 0.259266"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image929.jpg",
+      "sha256": "071b2ecebf54a3a2a5eb8e1e5b6945d22b6d79e4b75bbcdf901d8651f6dbea70",
+      "labels": [
+        "0 0.510594 0.240187 0.078812 0.041937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image677.jpeg",
+      "sha256": "ca8281a77641f981cf98585c7aefa51d1708f6636f3bb6aa93367e5e2ffbb0f6",
+      "labels": [
+        "0 0.509273 0.266469 0.135797 0.104937"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image521.jpeg",
+      "sha256": "8e48b2cfa98aa260d38c0d94cafaa1ff9474be58e04daafd06fa45e8853b8bd8",
+      "labels": [
+        "0 0.782977 0.434852 0.021547 0.014391",
+        "0 0.618281 0.236984 0.051875 0.041781",
+        "0 0.360891 0.535945 0.086344 0.079141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image48.jpeg",
+      "sha256": "c7fd84c36207bb74def620088547ff98d7c6a37de55bfd474fe98070ffc5f94b",
+      "labels": [
+        "0 0.364719 0.420570 0.142437 0.103547"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image613.jpg",
+      "sha256": "e6afd2c229540ea7bd645194180cf97edfc568bfacc345d66fef73a24f3f5416",
+      "labels": [
+        "0 0.945461 0.322625 0.102891 0.129625",
+        "0 0.738672 0.428586 0.092594 0.106984",
+        "0 0.583320 0.383320 0.086422 0.156391",
+        "0 0.437227 0.265008 0.094641 0.162547",
+        "0 0.234555 0.107602 0.170797 0.127578"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image156.jpg",
+      "sha256": "0dd48cb309090dd49b6df4fe0e1bda12c67dd9d60f5375c1a8eb11617eda8a9c",
+      "labels": [
+        "0 0.478352 0.157250 0.117109 0.147188"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1390.jpg",
+      "sha256": "0c41311cb4005b0b9781690a4f5fa5c35433db873303b7d9c0ce22a335b101c5",
+      "labels": [
+        "1 0.470172 0.135820 0.199594 0.179016"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image687.jpg",
+      "sha256": "a2c3e9c017b9786faf1676148cde251b329b2baaed5aa83c1085ce8b5e50b5f8",
+      "labels": [
+        "0 0.566883 0.301453 0.069953 0.051437"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image755.jpg",
+      "sha256": "e3999ae92cf0760ce83602e9bf55487a1b72a7164e7738dcbbbc4759ec7c1152",
+      "labels": [
+        "0 0.144039 0.474914 0.113172 0.216047"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1279.jpg",
+      "sha256": "fc430defb7188937447b301c59ac79eb04168c4669548e002e91c967f7b7a7e3",
+      "labels": [
+        "1 0.822625 0.300391 0.092875 0.045563",
+        "1 0.311781 0.101492 0.245344 0.145453"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image399.jpg",
+      "sha256": "363a10b54d9dbd130f862f2f76ed963876149f47da8f3ff9731429891cb17bed",
+      "labels": [
+        "0 0.429852 0.148648 0.130641 0.079141"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image404.jpg",
+      "sha256": "7066a36010f7e03ad523b970e62664a44ec572527c9b77ec9509279727784955",
+      "labels": [
+        "0 0.825508 0.134891 0.214609 0.128344"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image520.jpg",
+      "sha256": "6bcca737e84fddc108c1d406d3f8fb9c0be738d66580db32cdfeffa5819add87",
+      "labels": [
+        "0 0.532945 0.056937 0.226609 0.106688"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1030.jpg",
+      "sha256": "8b49d49680065cbe2b76c96d596199e433d7b5c42d8aefee72a567b3e928ce58",
+      "labels": [
+        "0 0.586586 0.090906 0.233984 0.121438"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1165.jpg",
+      "sha256": "6539650067867a48a572031e737a98c51ceb785f31976ec69ce5428cb21652ce",
+      "labels": [
+        "1 0.428078 0.267836 0.148156 0.111109"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image952.jpg",
+      "sha256": "931f53ad4701b0fd95d8d9c43f7c40a939e3e824fa87c9963b2bfa4955eb4abe",
+      "labels": [
+        "0 0.536578 0.151156 0.219969 0.083250"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image781.jpg",
+      "sha256": "33b66441f1b30b7ce2ffaf27d1cd94e5f352f91dc15502f93e288e6f9ecd1522",
+      "labels": [
+        "0 0.453719 0.566469 0.078187 0.102875"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image142.jpg",
+      "sha256": "db2a5eea8196a35f7fda1b530624d06e0e353b94ef341d4eabbb1e26cb85538a",
+      "labels": [
+        "0 0.501086 0.155953 0.136578 0.138531"
+      ]
+    },
+    {
+      "split": "train",
+      "source": "images/train/image1103.jpg",
+      "sha256": "fbc8ea5d5c70e3b0a5f2f3c41e80bd971cbc8c03932ca7eced19adadfc70f1aa",
+      "labels": [
+        "0 0.556289 0.147195 0.222953 0.103891"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1121.jpg",
+      "sha256": "eded015b43e5cae15e4713cd111cd5b5c6c3cb482a2d58964c1a013b1182c6c9",
+      "labels": [
+        "0 0.156195 0.425219 0.059047 0.052500",
+        "0 0.198188 0.425219 0.056438 0.068250",
+        "0 0.302516 0.436375 0.047250 0.056437",
+        "0 0.337953 0.445562 0.052500 0.059063",
+        "0 0.360914 0.415383 0.064297 0.069547",
+        "0 0.440312 0.418656 0.055125 0.049875",
+        "0 0.261836 0.428500 0.060359 0.069563",
+        "0 0.459344 0.435063 0.048562 0.064312",
+        "0 0.433750 0.443594 0.044625 0.047250",
+        "0 0.494117 0.436375 0.060359 0.077438",
+        "0 0.506586 0.408164 0.074797 0.070859",
+        "0 0.601734 0.478375 0.063000 0.059063",
+        "0 0.695563 0.452781 0.056438 0.073500",
+        "0 0.788086 0.442938 0.062984 0.077438",
+        "0 0.838609 0.450156 0.038063 0.068250",
+        "0 0.887164 0.442938 0.053797 0.082688"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image439.jpeg",
+      "sha256": "9e4211b5fc8fb776bd6d4b73f9edb6169f02d2647767c75a997f7458ff542d76",
+      "labels": [
+        "0 0.429820 0.697813 0.109109 0.088719",
+        "0 0.511953 0.639656 0.100719 0.077937",
+        "0 0.410039 0.417836 0.095922 0.073141",
+        "0 0.307523 0.431664 0.109109 0.067078"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image117.jpg",
+      "sha256": "7599316f243b98c048997568b9e450fe5ef9f533c99ecf617096519d1e51c36b",
+      "labels": [
+        "0 0.698063 0.493523 0.047625 0.069266",
+        "0 0.794383 0.506508 0.088734 0.069266",
+        "0 0.838758 0.489195 0.051953 0.060609",
+        "0 0.867977 0.503266 0.036797 0.049781",
+        "0 0.901531 0.529234 0.056281 0.058438",
+        "0 0.939406 0.511914 0.058437 0.062766",
+        "0 0.976734 0.500016 0.046531 0.056281",
+        "0 0.465375 0.481617 0.041125 0.045453",
+        "0 0.546555 0.529234 0.069266 0.062781",
+        "0 0.633125 0.489195 0.073594 0.051953"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image23.jpeg",
+      "sha256": "bf766e8092d8cf03584a0eb01c5ff8a806ee92715bb3f4ccb6a03f36750f9d6b",
+      "labels": [
+        "0 0.381000 0.572273 0.087312 0.058734"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image868.jpg",
+      "sha256": "4d5441865a8b04c1391bfc35957555e28cb68530ff8fac503e0e4d8e9653addd",
+      "labels": [
+        "0 0.491344 0.154008 0.203250 0.101734"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1129.jpg",
+      "sha256": "88a08949ecb999dc4cde55a2a2a9728e3df519264f57d20b8172196c42ae4eaa",
+      "labels": [
+        "1 0.583141 0.335977 0.177781 0.135797",
+        "1 0.348578 0.273016 0.192594 0.143219"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image867.jpg",
+      "sha256": "6d7539ee777383a27c859f7ce06bd54a36f971efaadded03849a774aca0dafae",
+      "labels": [
+        "0 0.487016 0.166992 0.182031 0.119047"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image749.jpg",
+      "sha256": "ac5dafafcf18a42e44cb11740beb6897b8d9b1ba588916838debb9b54d976cb7",
+      "labels": [
+        "0 0.303508 0.395695 0.189297 0.111109",
+        "0 0.553508 0.418328 0.162547 0.131688"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image355.jpg",
+      "sha256": "af1bdcf3659152fff68b1160544c8331e79fb5c71ae4c01287d60557e66f7138",
+      "labels": [
+        "0 0.475391 0.140258 0.149875 0.067141"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1146.jpg",
+      "sha256": "a30443ba89cc392a1720dc5189913b83ad4a1de42400bc2286f47c6127e8d8b8",
+      "labels": [
+        "1 0.716195 0.265242 0.270922 0.216047"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image709.jpg",
+      "sha256": "acd89659a7228b8e5a43485c93e5445e2f863411fe4e924a172a8922020b0914",
+      "labels": [
+        "0 0.442297 0.158344 0.117500 0.090750"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image144.jpg",
+      "sha256": "abc44b37c273f2484fef2c1d5fe11ca8399d1442f685f2e88eafa3c9eb6d7069",
+      "labels": [
+        "0 0.933984 0.385391 0.075969 0.064938",
+        "0 0.802055 0.301844 0.183984 0.123375",
+        "0 0.929656 0.533656 0.079875 0.171000",
+        "0 0.752164 0.528141 0.222734 0.208000",
+        "0 0.700219 0.336469 0.218406 0.166656",
+        "0 0.554008 0.278141 0.177484 0.136156",
+        "0 0.341992 0.286797 0.190266 0.149562",
+        "0 0.224023 0.301945 0.158234 0.118828",
+        "0 0.203461 0.397187 0.199359 0.209750",
+        "0 0.076945 0.313742 0.101734 0.194797",
+        "0 0.357141 0.445883 0.134406 0.233547"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image35.jpeg",
+      "sha256": "8ced7c69304fc46a6e2fdfd3c06e3472292c94744aa30b89d1c1c0db07623399",
+      "labels": [
+        "0 0.534125 0.289734 0.159469 0.162938"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image576.jpg",
+      "sha256": "2ac6eb4693acac690ba1fca0f548b57a60291011c1e7ac844d318cdbbc4ec709",
+      "labels": [
+        "0 0.444461 0.053508 0.191359 0.086422"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image395.jpg",
+      "sha256": "860fcd03c8261cf01155bd5270923f7a5673430e49840861bf3dc6970ef73324",
+      "labels": [
+        "0 0.731398 0.197773 0.103141 0.055234"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image608.jpg",
+      "sha256": "6cf7283933660187488c9e022405ba8baac23b4ca42f519da19391b4ce979f92",
+      "labels": [
+        "0 0.191344 0.288047 0.265437 0.144031",
+        "0 0.314805 0.344633 0.100828 0.072016",
+        "0 0.541141 0.311711 0.162563 0.154328",
+        "0 0.407391 0.335375 0.121406 0.082312",
+        "0 0.806063 0.312750 0.387875 0.275719",
+        "0 0.046281 0.352867 0.078187 0.072016"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image763.jpg",
+      "sha256": "af8a767fb0a3b429f3e534f27239f6189745ddb7a9d477d6a739a4daaeaa9d5f",
+      "labels": [
+        "0 0.141992 0.441984 0.100828 0.224281"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1301.jpg",
+      "sha256": "acaf2125e1445908fb0681e8a28c4994de6a42118857685394ca0be1eb29670e",
+      "labels": [
+        "1 0.573781 0.296016 0.162969 0.082375"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1377.jpg",
+      "sha256": "e6ffe36c1e29c450b299e25744a28f877f555a41d1d9fef3275bd336f4396165",
+      "labels": [
+        "1 0.482891 0.283141 0.202469 0.175313"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1046.jpeg",
+      "sha256": "ebf0c4d057c3a301ae090c1c2b1a2c9f4e5c381d730ec4727fe6b93b0dd04d82",
+      "labels": [
+        "0 0.690477 0.468617 0.125328 0.101516"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image391.jpg",
+      "sha256": "d1b33a4bfc054c5c8ebec82ac2a4cf79474368f0327e21a20bc37d912c82e17a",
+      "labels": [
+        "0 0.477187 0.280547 0.139063 0.079125"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1397.jpg",
+      "sha256": "a6800c26147a0a3e02c7a8dc92c173ce4713e62c70e1c600adbb1f3cd3be5d56",
+      "labels": [
+        "1 0.484586 0.368289 0.150203 0.154391"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image654.jpg",
+      "sha256": "07baf23f2e3aacca2805dbe6b4a7d8ad4a895c15a8c5fac9bb87494fc7a9d8ce",
+      "labels": [
+        "0 0.264414 0.502688 0.086422 0.074063",
+        "0 0.472234 0.498570 0.148156 0.106984",
+        "0 0.634781 0.447133 0.107000 0.082297",
+        "0 0.696516 0.528406 0.069969 0.063781"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1342.jpg",
+      "sha256": "a93068d703eeb4da09dcce88b2557752b759d32b0106ba344e7a3e9c75f88271",
+      "labels": [
+        "1 0.461883 0.271414 0.257141 0.088891"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image347.jpg",
+      "sha256": "ce65644b1c74a38dee74c63b11b52225851216401ee2374dbac7c9ea2fbe4e41",
+      "labels": [
+        "0 0.568797 0.116406 0.208000 0.197594"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1211.jpg",
+      "sha256": "c284f6faa7450e0c97cda71bbb0598590b4c61faf620801370e645c0730a00e4",
+      "labels": [
+        "1 0.398375 0.189391 0.147187 0.149125",
+        "1 0.546539 0.243398 0.119266 0.123391"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image674.jpg",
+      "sha256": "0eac08089d914d8f83b8c6f772b6b7cedb214fd9335f0fb8d63731bd71ab0fbd",
+      "labels": [
+        "0 0.394047 0.187258 0.115219 0.074078"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image897.jpeg",
+      "sha256": "290be0fa63c6a7a2c93b4bb6bb4a632477082e961ee7f6b35d4932cd2ad8b36a",
+      "labels": [
+        "0 0.511992 0.275773 0.045516 0.028828",
+        "0 0.449586 0.273320 0.045516 0.028828"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image176.jpg",
+      "sha256": "70b8170b50dbd3385b6e842cf5db2dd788d29a433951d814b481421ac1f68309",
+      "labels": [
+        "0 0.443703 0.116719 0.136500 0.138094"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image396.jpg",
+      "sha256": "8eafa32397da90781d53f117100f7b8332bbb924ef83f86df2ebc8b1401f88a8",
+      "labels": [
+        "0 0.495187 0.189438 0.110281 0.067125"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1130.jpg",
+      "sha256": "73e7b6460eb6f2789ba4eb941edcec4a4410a1af74835aa0bc190853775d5398",
+      "labels": [
+        "1 0.496719 0.165609 0.251844 0.145688"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image318.jpg",
+      "sha256": "27ad01984c3e54bb5b31ab8ff6558a161988f13e8b912fdca6d4b0a6dbdea602",
+      "labels": [
+        "0 0.572992 0.335695 0.133328 0.131734"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image607.jpeg",
+      "sha256": "ad382def98d5052c96993e348c08b4003a700f858a95bc36c7cc133b219362d6",
+      "labels": [
+        "0 0.634766 0.353898 0.144031 0.098766",
+        "0 0.416656 0.296281 0.115219 0.102875"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image407.jpg",
+      "sha256": "ec9682478cbc68a04498b68c6c8dd16dcfc3a1afce5ffb7308a79d850803f781",
+      "labels": [
+        "0 0.545523 0.054539 0.230203 0.109078"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image199.jpg",
+      "sha256": "d565554563ad44cc0a5503fb350771886aa49c95bb1d72a1f95b7d1e5ed14028",
+      "labels": [
+        "0 0.541320 0.140523 0.280953 0.274609"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image230.jpg",
+      "sha256": "79a77824ed74f7237f11a72054a97c418c938e62bb2ccd3572d468a7ad407fee",
+      "labels": [
+        "0 0.809570 0.207195 0.211109 0.173016"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1215.jpg",
+      "sha256": "b29f28e578470c4b67bb36248eb3c44256b1f11e87395dae47538bc5cee0d4e1",
+      "labels": [
+        "1 0.690477 0.359414 0.212328 0.225109",
+        "1 0.347297 0.297625 0.205625 0.270781"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image259.jpg",
+      "sha256": "26519faba73104443f3aca08803e659ea718537d832924cb823c03592d0b5886",
+      "labels": [
+        "0 0.616641 0.075313 0.353969 0.141250"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image955.jpg",
+      "sha256": "ad591fd1beefa8aa1df88007994d6579ed4f042300b1759c6ea5205ce847b802",
+      "labels": [
+        "0 0.632211 0.143273 0.229953 0.087484"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image759.jpg",
+      "sha256": "84a33600169562a763fe9e04ed1c4b030244007b3c9c7ec6aa651a0e094651fa",
+      "labels": [
+        "0 0.130672 0.505773 0.115219 0.216047"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1217.jpg",
+      "sha256": "e74f5de6a61b713e5f2a85d84a8af5743e07d257b36459414c41dc4a6be28407",
+      "labels": [
+        "1 0.614828 0.401625 0.147187 0.179656",
+        "1 0.234852 0.267211 0.153891 0.209953",
+        "1 0.832359 0.342969 0.179656 0.205625",
+        "1 0.433008 0.424352 0.142859 0.168828"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image640.jpg",
+      "sha256": "bd205ac51b81fd46af970eda8b51bf42dd2cc017f1bfafebbd90ea395174b451",
+      "labels": [
+        "0 0.486617 0.123031 0.362141 0.183125"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image670.jpg",
+      "sha256": "7475975988f9326403cf24f078b7c091f4f2eab39774d23575b0e01fe678e89c",
+      "labels": [
+        "0 0.462977 0.183141 0.109047 0.131688"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image130.jpg",
+      "sha256": "1876f973dacff4dd9b360b2d4f2d19501794bc58d4347040cf4c478eed0781fb",
+      "labels": [
+        "0 0.594156 0.287773 0.149563 0.142859",
+        "0 0.207797 0.471969 0.156063 0.138531",
+        "0 0.372297 0.307469 0.121000 0.147187",
+        "0 0.694805 0.207898 0.147391 0.121203",
+        "0 0.848484 0.186148 0.078125 0.112766"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image896.jpg",
+      "sha256": "afb47775f2793f24459fb9e2de7392dfcd954e5a59001d30bd66e7a958490a73",
+      "labels": [
+        "0 0.462195 0.130070 0.166672 0.065953"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image278.jpg",
+      "sha256": "7ef585455127c26384b2af86ae2a91fbad649fcf2ba5d89f0e6de4f28bd24835",
+      "labels": [
+        "0 0.638867 0.065055 0.347609 0.120641"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image238.jpg",
+      "sha256": "733c2457decd35871b226ccc88198eab38c462c8b16e6cbfd5c576410da90fb6",
+      "labels": [
+        "0 0.215125 0.197680 0.314281 0.084109"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image164.jpg",
+      "sha256": "8b334d93ceb8e15731d692f0c31d0dc34deb7bf5feee6341bdc1e19c7066fa47",
+      "labels": [
+        "0 0.485930 0.133117 0.318391 0.179859"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1010.jpg",
+      "sha256": "3dedf259abe74f2659fb7861650a911c2bab608091954f089961e36465be5c34",
+      "labels": [
+        "0 0.540961 0.196703 0.116359 0.072219"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image686.jpeg",
+      "sha256": "e6f8ec5e8b376c5e27ed05c69ed854d2ebb62d04019c71cb25d8d4188be2b359",
+      "labels": [
+        "0 0.817914 0.450625 0.111109 0.065844"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image762.jpg",
+      "sha256": "66d4c6ac0b7abeb1626af0f1aee5959c9bc502ba1ac91a91873a1771f31316c5",
+      "labels": [
+        "0 0.556594 0.129227 0.197531 0.096703"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image65.jpeg",
+      "sha256": "53d75e14f7e1d19eb2251496c72cf11940319d11c351af4d0edb947f3832baaa",
+      "labels": [
+        "0 0.556602 0.432117 0.111109 0.086422",
+        "0 0.666680 0.457836 0.113172 0.072016"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image1137.jpg",
+      "sha256": "b1d9e4a673e9889ecc8063f1ccf227891eafb4e91389eb94b23a22513c1642b7",
+      "labels": [
+        "1 0.473258 0.314992 0.298766 0.202484"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image666.jpg",
+      "sha256": "d8b86f11f8c1ddc4abfbe77a73120819ac269ea9fe036d3f87aaf6b098fe48d5",
+      "labels": [
+        "0 0.449602 0.189312 0.226328 0.160500"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image933.jpg",
+      "sha256": "87abcf35986cf155ab90fc57fe5dc73b49a07baf0e0d3a20c99390c05ec0c805",
+      "labels": [
+        "0 0.610352 0.223687 0.128672 0.065937"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image392.jpg",
+      "sha256": "3ed6fbf53a2d3443215941b52dfdb14adc34d827022cf5ae5ab9bb4a478f905b",
+      "labels": [
+        "0 0.585727 0.264383 0.135547 0.094766"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image270.jpg",
+      "sha256": "0ac4b25914834e3f80ded79a4b2db146239685c56c1657bb957651cef2c25422",
+      "labels": [
+        "0 0.607117 0.061094 0.226984 0.077781"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image615.jpg",
+      "sha256": "ee660d9bc3c941c5826534a6a4b5d460cb436126e9de57fd691b22554056b020",
+      "labels": [
+        "0 0.418711 0.320562 0.053484 0.051438",
+        "0 0.466031 0.395664 0.041156 0.041141",
+        "0 0.229406 0.338055 0.037031 0.057609",
+        "0 0.339500 0.343203 0.039094 0.039094",
+        "0 0.516445 0.406984 0.030859 0.067906",
+        "0 0.663563 0.395664 0.041156 0.041141"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image669.jpg",
+      "sha256": "9542dc7eb744083d0a22da4a150fb6371d6610f017ede9ef22988f89a8db07a2",
+      "labels": [
+        "0 0.447547 0.268531 0.115219 0.125500"
+      ]
+    },
+    {
+      "split": "val",
+      "source": "images/val/image798.jpg",
+      "sha256": "76adf700356a62b2d5ebb8a7edc19822b92b0f2cfe4288259a269bd7f948c2b7",
+      "labels": [
+        "0 0.606172 0.085492 0.147187 0.101953"
+      ]
+    }
+  ],
+  "duplicate_filter": "63-bit perceptual hash; reject Hamming distance <= 6",
+  "limitations": [
+    "This is public construction imagery, not the missing factory CCTV dataset.",
+    "Original train/val boundaries retained; source scene and worker IDs unavailable.",
+    "Perceptual deduplication reduces leakage but does not establish scene independence.",
+    "Only 17 no_helmet validation boxes in this fixed subset; recall is uncertain."
+  ]
+}

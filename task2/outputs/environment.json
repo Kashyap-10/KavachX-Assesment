@@ -1,0 +1,8 @@
+{
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "started_utc": "2026-10-26T11:53:34.979532+00:00",
+  "source_archive_sha256": "bef8dcb599aa4e9d9f5e602cb6fa7143d3c84d7f6a0ff40463d7f2a4c2632ccc"
+}

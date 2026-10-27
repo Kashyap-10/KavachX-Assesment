@@ -1,0 +1,28 @@
+{
+  "model": "ViT-B/32",
+  "weights_url": "https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt",
+  "weights_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+  "device": "cpu",
+  "prompts": {
+    "positive": [
+      "a night vision image of a person standing or walking outdoors",
+      "a thermal infrared image of one or more human figures",
+      "a surveillance image of a person with a head, torso, arms and legs"
+    ],
+    "negative": [
+      "a night vision image of a wild animal",
+      "a thermal infrared image of a dog, deer or another four legged animal",
+      "a surveillance image of empty ground, vegetation or rocks",
+      "a surveillance image of water, reflections or camera noise"
+    ],
+    "temperature": 0.05,
+    "label_semantics": "Human presence proxy; an image alone cannot establish authorization or intent."
+  },
+  "preprocessing": "RGB, aspect-preserving black padding to 224 square, official CLIP normalization",
+  "score": "Softmax over normalized negative/positive mean text prototypes; NOT a calibrated probability",
+  "labels_sha256": "bbddde748ba7118ac359b14c33e08d772c53006ec64ec01f8eb0a9709efeaf7f",
+  "verifier_source_sha256": "e5de613041b3e3a1ca6838f116a766c9211552930481a17300415e92cf05a44a",
+  "python": "3.12.14",
+  "torch": "2.8.0",
+  "configuration_sha256": "cfca70edc8d01a0b652448166545c9617b20cf19bd734355e843d30608b63346"
+}

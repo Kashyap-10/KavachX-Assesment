@@ -1,0 +1,27 @@
+{
+  "image": "image117.jpg",
+  "image_sha256": "7599316f243b98c048997568b9e450fe5ef9f533c99ecf617096519d1e51c36b",
+  "results": [
+    {
+      "model": "model_fp32.onnx",
+      "sha256": "cea6a8def4b4649f560689c10b7a9c14e5225a016cc09af717593ae61385f0a1",
+      "max_class_score": 0.9518138766288757
+    },
+    {
+      "model": "model_int8_all_ops.onnx",
+      "sha256": "43f40fc8912925ee003eac2012feb2e4084f1ba4abd6fc4176dd5c8f677fd482",
+      "max_class_score": 0.0
+    },
+    {
+      "model": "model_int8_percentile_all_ops.onnx",
+      "sha256": "5f16b891f337e676c2d163e851e14ef75543d2fdef139168c8b41d06c7d81287",
+      "max_class_score": 0.0
+    },
+    {
+      "model": "model_int8.onnx",
+      "sha256": "1e01971b56583f0b25b483de9b206d50f1933051ea241a10c82f5e2117c8e629",
+      "max_class_score": 0.9344836473464966
+    }
+  ],
+  "conclusion": "All-ops PTQ destroys class scores on this real image. Convolution-only PTQ preserves nonzero scores. Full validation results are in benchmark_measurements.json."
+}

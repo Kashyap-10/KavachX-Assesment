@@ -1,0 +1,24 @@
+test_backpack_cannot_satisfy_toolbox (test_task1.AssociationTests.test_backpack_cannot_satisfy_toolbox) ... ok
+test_one_bag_and_duplicate_prompts_do_not_qualify_two_people (test_task1.AssociationTests.test_one_bag_and_duplicate_prompts_do_not_qualify_two_people) ... ok
+test_wearing_requires_an_item_near_the_head (test_task1.AssociationTests.test_wearing_requires_an_item_near_the_head) ... ok
+test_at_least_includes_exact_boundary (test_task1.DwellTests.test_at_least_includes_exact_boundary) ... ok
+test_missing_attribute_preserves_id_but_does_not_add_dwell (test_task1.DwellTests.test_missing_attribute_preserves_id_but_does_not_add_dwell) ... ok
+test_nonmonotonic_time_is_rejected (test_task1.DwellTests.test_nonmonotonic_time_is_rejected) ... ok
+test_occlusion_and_outside_time_do_not_count (test_task1.DwellTests.test_occlusion_and_outside_time_do_not_count) ... ok
+test_strict_threshold_and_exactly_one_event (test_task1.DwellTests.test_strict_threshold_and_exactly_one_event) ... ok
+test_controlled_end_to_end_outputs_match_embedded_jpeg (test_task1.EvidenceTests.test_controlled_end_to_end_outputs_match_embedded_jpeg) ... Event #1: dwell=1.250s at video t=1.250s
+Done: 16 samples, 1 events. Outputs: /var/folders/k9/4cy70s995p1dn8d_p5my53zm0000gn/T/tmpmblugigj/out
+ok
+test_invalid_polygon_and_unknown_zone_fail_without_a_fallback (test_task1.EvidenceTests.test_invalid_polygon_and_unknown_zone_fail_without_a_fallback) ... ok
+test_privacy_covers_nonqualifying_people_and_background (test_task1.EvidenceTests.test_privacy_covers_nonqualifying_people_and_background) ... ok
+test_schema_masked_jpeg_and_verification_flag (test_task1.EvidenceTests.test_schema_masked_jpeg_and_verification_flag) ... ok
+test_missing_fields_negation_and_compound_rules_fail (test_task1.ParserTests.test_missing_fields_negation_and_compound_rules_fail) ... ok
+test_new_nouns_and_minute_units_are_not_defaulted (test_task1.ParserTests.test_new_nouns_and_minute_units_are_not_defaulted) ... ok
+test_original_example_extracts_all_fields (test_task1.ParserTests.test_original_example_extracts_all_fields) ... ok
+test_threshold_and_comparison_change_rule_identity (test_task1.ParserTests.test_threshold_and_comparison_change_rule_identity) ... ok
+test_wearing_and_multiword_item (test_task1.ParserTests.test_wearing_and_multiword_item) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.122s
+
+OK

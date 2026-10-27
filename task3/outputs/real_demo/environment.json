@@ -1,0 +1,40 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "torch_threads": 4,
+  "packages": {
+    "filelock": "4.2.4",
+    "setuptools": "84.2.1",
+    "numpy": "2.2.6",
+    "networkx": "3.7",
+    "ftfy": "6.3.1",
+    "torch": "2.8.0",
+    "wcwidth": "0.9.4",
+    "clip": "1.0",
+    "sympy": "1.14.0",
+    "torchvision": "0.23.0",
+    "tqdm": "4.70.1",
+    "mpmath": "1.3.0",
+    "fsspec": "2026.9.0",
+    "Jinja2": "3.1.6",
+    "regex": "2026.9.29",
+    "typing_extensions": "4.16.0",
+    "MarkupSafe": "3.0.4",
+    "pillow": "11.3.0"
+  },
+  "checks": {
+    "task3_unit_tests": {
+      "passed": 6,
+      "environment": "Separate task3-clean environment, declared Task 3 dependencies only"
+    },
+    "repository_tests": {
+      "passed": 29
+    },
+    "fresh_inference": {
+      "images": 50,
+      "maximum_score_difference": 0.0
+    },
+    "git_diff_check": "passed"
+  }
+}

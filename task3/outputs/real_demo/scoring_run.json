@@ -1,0 +1,6 @@
+{
+  "images": 50,
+  "mean_latency_ms": 18.786873320495943,
+  "p95_latency_ms": 19.48091410085908,
+  "scope": "Image decode, padding/preprocessing and CLIP image scoring; excludes model loading and text encoding"
+}
